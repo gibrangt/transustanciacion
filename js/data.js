@@ -142,6 +142,83 @@ const DEBATE_DATA = {
     }
   ],
 
+  // ── Sección 4 (cont.) ─────────────────────────────────────────────────────
+  // Argumentos desarrollados como tarjetas expandibles (más extensos que los
+  // resúmenes del scrollytelling). Numeración según la del Dr. Dante Urbina.
+  // El texto se reproduce literalmente, tal como lo provee el usuario.
+  argumentos_urbina_extendidos: [
+    {
+      id: 'adoracion-agustin',
+      n: 6,
+      titulo: 'La Adoración Eucarística como prueba de la Transustanciación',
+      padre: 'San Agustín',
+      intro:
+        'Este argumento se basa en la premisa de que la adoración (latría) solo es debida a Dios. ' +
+        'Si los Padres de la Iglesia exigían adorar los elementos eucarísticos antes de recibirlos, ' +
+        'esto implica que no creían que lo que estaba allí fuera simplemente pan, sino la sustancia misma de Cristo.',
+      secciones: [
+        {
+          titulo: '1. El fundamento bíblico: El "Escabel de sus pies"',
+          intro: 'San Agustín analiza el versículo: "Adorad el escabel de sus pies, porque es santo".',
+          puntos: [
+            {
+              label: 'El dilema:',
+              texto:
+                'Dado que la Escritura dice que "la tierra es el escabel de mis pies" y que solo se debe adorar a Dios, ' +
+                'Agustín se pregunta cómo es posible adorar la tierra (el escabel) sin caer en la impiedad.'
+            },
+            {
+              label: 'La resolución:',
+              texto:
+                'La solución se encuentra en la Encarnación. Cristo tomó "tierra de la tierra" al recibir su carne de la Virgen María. ' +
+                'Por tanto, al ser la carne de Cristo parte de su Persona Divina, esa "tierra" puede y debe ser adorada.'
+            }
+          ]
+        },
+        {
+          titulo: '2. El vínculo con la Eucaristía',
+          intro: 'Agustín conecta directamente esta adoración de la carne de Cristo con el sacramento:',
+          puntos: [
+            {
+              label: 'Mandato de adoración:',
+              texto: 'Afirma que Cristo "nos dio esa misma carne en alimento para nuestra salvación".'
+            },
+            {
+              label: 'Necesidad de la adoración:',
+              texto: 'Establece de forma contundente que "nadie come esta carne sin antes adorarla".'
+            },
+            {
+              label: 'Implicación moral:',
+              texto: 'Concluye que no solo no es pecado adorar la Eucaristía, sino que "pecaremos si no lo adoramos".'
+            }
+          ]
+        },
+        {
+          titulo: '3. Naturaleza de la presencia (Realidad vs. Simbolismo)',
+          intro:
+            'Para responder a posibles objeciones sobre un "comensalismo carnal" (pensar que se corta el cuerpo en trozos), Agustín aclara:',
+          puntos: [
+            {
+              label: 'Entendimiento Espiritual:',
+              texto: 'Aunque el sacramento se celebra de forma visible, debe entenderse espiritualmente para que vivifique.'
+            },
+            {
+              label: 'Más que un símbolo:',
+              texto:
+                'Sin embargo, esta "espiritualidad" no anula la realidad de la carne. Agustín enfatiza que la carne que se adora ' +
+                'es la misma que Cristo "tomó de la tierra" y en la que "anduvo por el mundo".'
+            }
+          ]
+        }
+      ],
+      conclusion:
+        'El texto de San Agustín sobre el Salmo 98 demuestra que en el siglo V la adoración de la Eucaristía no era una opción, ' +
+        'sino un requisito previo a la comunión, fundamentado en la identidad ontológica entre el sacramento y la carne nacida de María.',
+      fuente: 'San Agustín · Enarraciones sobre los Salmos',
+      link: 'https://www.augustinus.it/spagnolo/esposizioni_salmi/esposizione_salmo_119_testo.htm'
+    }
+  ],
+
   // ── Sección 5 ───────────────────────────────────────────────────────────
   // Objeciones de Pacheco, presentadas con fidelidad y luego respondidas.
   // `respuesta_catolica` se deja vacía hasta redactar la réplica con sus fuentes.

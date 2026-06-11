@@ -117,6 +117,67 @@
     });
   }
 
+  /* Argumentos desarrollados como tarjetas <details> expandibles */
+  function renderArgumentosExtendidos() {
+    const wrap = $('#argumentos-extra');
+    const lista = DATA.argumentos_urbina_extendidos;
+    if (!wrap || !lista || lista.length === 0) return;
+
+    lista.forEach((a) => {
+      const secciones = (a.secciones || [])
+        .map((s) => {
+          const intro = isEmpty(s.intro) ? '' : `<p class="arg-card__sec-intro">${s.intro}</p>`;
+          const puntos = (s.puntos || [])
+            .map(
+              (p) => `<li class="arg-card__punto">
+                <span class="arg-card__punto-label">${p.label}</span> ${p.texto}
+              </li>`
+            )
+            .join('');
+          return `
+            <div class="arg-card__sec">
+              <h4 class="arg-card__sec-titulo">${s.titulo}</h4>
+              ${intro}
+              ${puntos ? `<ul class="arg-card__puntos">${puntos}</ul>` : ''}
+            </div>`;
+        })
+        .join('');
+
+      const conclusion = isEmpty(a.conclusion)
+        ? ''
+        : `<p class="arg-card__conclusion"><b>Conclusión del argumento</b>${a.conclusion}</p>`;
+
+      const fuente = isEmpty(a.link)
+        ? (isEmpty(a.fuente)
+            ? ''
+            : `<span class="fuente-tag"><i class="ti ti-quote" aria-hidden="true"></i>${a.fuente}</span>`)
+        : `<a class="arg-card__fuente" href="${a.link}" target="_blank" rel="noopener noreferrer">
+            <i class="ti ti-external-link" aria-hidden="true"></i>
+            ${isEmpty(a.fuente) ? 'Ver fuente' : a.fuente}
+          </a>`;
+
+      const card = el('details', 'arg-card reveal');
+      card.id = `arg-card-${a.id}`;
+      card.innerHTML = `
+        <summary class="arg-card__summary">
+          <span class="arg-card__n" aria-hidden="true">${String(a.n).padStart(2, '0')}</span>
+          <span class="arg-card__head">
+            <span class="arg-card__kicker">Argumento ${a.n}</span>
+            <span class="arg-card__titulo">${a.titulo}</span>
+            ${isEmpty(a.padre) ? '' : `<span class="arg-card__padre">${a.padre}</span>`}
+          </span>
+          <i class="ti ti-chevron-down arg-card__chevron" aria-hidden="true"></i>
+        </summary>
+        <div class="arg-card__body">
+          ${isEmpty(a.intro) ? '' : `<p class="arg-card__intro">${a.intro}</p>`}
+          ${secciones}
+          ${conclusion}
+          ${fuente ? `<div class="arg-card__footer">${fuente}</div>` : ''}
+        </div>`;
+      wrap.appendChild(card);
+    });
+  }
+
   function activateArgumento(index) {
     document.querySelectorAll('.scrolly__figure .arg-figure').forEach((f, i) =>
       f.classList.toggle('is-active', i === index)
@@ -337,6 +398,7 @@
     renderHero();
     renderConflictos();
     renderArgumentos();
+    renderArgumentosExtendidos();
     renderObjeciones();
     renderFuentes();
 
