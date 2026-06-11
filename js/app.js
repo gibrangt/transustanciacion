@@ -187,6 +187,71 @@
     });
   }
 
+  /* Objeciones de Pacheco como tarjetas <details> expandibles */
+  function renderObjeciones() {
+    const wrap = $('#objeciones-extra');
+    const lista = DATA.objeciones_pacheco;
+    if (!wrap || !lista || lista.length === 0) return;
+
+    lista.forEach((o) => {
+      // Las objeciones pueden tener subsecciones (cuando se detallen) o solo descripción
+      let contenido = '';
+
+      if (o.secciones && o.secciones.length > 0) {
+        // Objeción con subsecciones detalladas
+        contenido = (o.secciones || [])
+          .map((s) => {
+            const intro = isEmpty(s.intro) ? '' : `<p class="objecion-card__sec-intro">${s.intro}</p>`;
+            const puntos = (s.puntos || [])
+              .map(
+                (p) => `<li class="objecion-card__punto">
+                  <span class="objecion-card__punto-label">${p.label}</span> ${p.texto}
+                </li>`
+              )
+              .join('');
+            return `
+              <div class="objecion-card__sec">
+                <h4 class="objecion-card__sec-titulo">${s.titulo}</h4>
+                ${intro}
+                ${puntos ? `<ul class="objecion-card__puntos">${puntos}</ul>` : ''}
+              </div>`;
+          })
+          .join('');
+      } else if (!isEmpty(o.descripcion)) {
+        // Objeción con descripción simple
+        contenido = `<p class="objecion-card__descripcion">${o.descripcion}</p>`;
+      }
+
+      const fuente = isEmpty(o.link)
+        ? (isEmpty(o.fuente)
+            ? `<span class="fuente-tag fuente-tag--pendiente"><i class="ti ti-link" aria-hidden="true"></i>Fuente por añadir</span>`
+            : `<span class="fuente-tag"><i class="ti ti-quote" aria-hidden="true"></i>${o.fuente}</span>`)
+        : `<a class="objecion-card__fuente" href="${o.link}" target="_blank" rel="noopener noreferrer">
+            <i class="ti ti-external-link" aria-hidden="true"></i>
+            ${isEmpty(o.fuente) ? 'Ver fuente' : o.fuente}
+          </a>`;
+
+      const card = el('details', 'objecion-card reveal');
+      card.id = `objecion-card-${o.id}`;
+      card.innerHTML = `
+        <summary class="objecion-card__summary">
+          <span class="objecion-card__n" aria-hidden="true">${String(o.n).padStart(2, '0')}</span>
+          <span class="objecion-card__head">
+            <span class="objecion-card__kicker">Objeción ${o.n}</span>
+            <span class="objecion-card__titulo">${o.titulo}</span>
+            ${isEmpty(o.padre) ? '' : `<span class="objecion-card__padre">${o.padre}</span>`}
+          </span>
+          <i class="ti ti-chevron-down objecion-card__chevron" aria-hidden="true"></i>
+        </summary>
+        <div class="objecion-card__body">
+          ${isEmpty(o.intro) ? '' : `<p class="objecion-card__intro">${o.intro}</p>`}
+          ${contenido}
+          ${fuente ? `<div class="objecion-card__footer">${fuente}</div>` : ''}
+        </div>`;
+      wrap.appendChild(card);
+    });
+  }
+
   function activateArgumento(index) {
     document.querySelectorAll('.scrolly__figure .arg-figure').forEach((f, i) =>
       f.classList.toggle('is-active', i === index)
@@ -194,39 +259,6 @@
     document.querySelectorAll('.arg-step').forEach((s, i) =>
       s.classList.toggle('is-active', i === index)
     );
-  }
-
-  /* ─────────────────────────────────────────────────────────
-     5 · OBJECIONES
-     ───────────────────────────────────────────────────────── */
-  function renderObjeciones() {
-    const list = $('#objeciones-list');
-    DATA.objeciones_pacheco.forEach((o) => {
-      const respuesta = isEmpty(o.respuesta_catolica)
-        ? `<p class="objecion__pendiente">Respuesta católica por redactar.</p>`
-        : `<p class="objecion__texto">${o.respuesta_catolica}</p>`;
-      const fuente = isEmpty(o.fuente)
-        ? ''
-        : `<div class="objecion__footer"><span class="fuente-tag"><i class="ti ti-quote" aria-hidden="true"></i>${o.fuente}</span></div>`;
-
-      const node = el('article', 'objecion');
-      node.id = `objecion-${o.id}`;
-      node.innerHTML = `
-        <div class="objecion__head">
-          <span class="objecion__n" aria-hidden="true">${String(o.n).padStart(2, '0')}</span>
-          <h3 class="objecion__titulo">${o.titulo}</h3>
-        </div>
-        <div class="objecion__bloque objecion__bloque--pacheco">
-          <p class="objecion__rol"><i class="ti ti-message-2" aria-hidden="true"></i>Objeción de ${DATA.debatientes.pacheco.nombre}</p>
-          <p class="objecion__texto">${o.objecion}</p>
-        </div>
-        <div class="objecion__bloque objecion__bloque--respuesta">
-          <p class="objecion__rol"><i class="ti ti-message-2-check" aria-hidden="true"></i>Respuesta católica</p>
-          ${respuesta}
-        </div>
-        ${fuente}`;
-      list.appendChild(node);
-    });
   }
 
   /* ─────────────────────────────────────────────────────────
@@ -406,9 +438,9 @@
     }
     renderHero();
     renderConflictos();
-    renderArgumentos();
-    renderArgumentosExtendidos();
-    renderObjeciones();
+    // Nota: renderArgumentos(), renderArgumentosExtendidos() y renderObjeciones() no son necesarios.
+    // El contenido completo está en HTML estático en index.html (generado desde data.js con generate-static-html.js).
+    // Ver CLAUDE.md para el flujo de generación.
     renderFuentes();
 
     initNav();
