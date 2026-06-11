@@ -476,6 +476,11 @@
   color: var(--color-text);
   line-height: 1.6;
 }
+.arg-card__descripcion {
+  font-size: var(--step-0);
+  color: var(--color-text);
+  line-height: 1.55;
+}
 .arg-card__sec { display: flex; flex-direction: column; gap: 0.5rem; }
 .arg-card__sec-titulo {
   font-size: var(--step-0);
@@ -528,6 +533,7 @@
   text-decoration: none;
 }
 .arg-card__fuente:hover { color: var(--color-accent-deep); text-decoration: underline; }
+.fuente-tag--pendiente { opacity: 0.6; color: var(--color-text-muted); }
 
 @media (prefers-reduced-motion: reduce) {
   .arg-card__chevron { transition: none; }

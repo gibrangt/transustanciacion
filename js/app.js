@@ -124,24 +124,33 @@
     if (!wrap || !lista || lista.length === 0) return;
 
     lista.forEach((a) => {
-      const secciones = (a.secciones || [])
-        .map((s) => {
-          const intro = isEmpty(s.intro) ? '' : `<p class="arg-card__sec-intro">${s.intro}</p>`;
-          const puntos = (s.puntos || [])
-            .map(
-              (p) => `<li class="arg-card__punto">
-                <span class="arg-card__punto-label">${p.label}</span> ${p.texto}
-              </li>`
-            )
-            .join('');
-          return `
-            <div class="arg-card__sec">
-              <h4 class="arg-card__sec-titulo">${s.titulo}</h4>
-              ${intro}
-              ${puntos ? `<ul class="arg-card__puntos">${puntos}</ul>` : ''}
-            </div>`;
-        })
-        .join('');
+      // Algunos argumentos tienen subsecciones (Arg 6), otros solo descripción (Args 1-5, 7-10)
+      let contenido = '';
+
+      if (a.secciones && a.secciones.length > 0) {
+        // Argumento con subsecciones detalladas (como el Arg 6)
+        contenido = (a.secciones || [])
+          .map((s) => {
+            const intro = isEmpty(s.intro) ? '' : `<p class="arg-card__sec-intro">${s.intro}</p>`;
+            const puntos = (s.puntos || [])
+              .map(
+                (p) => `<li class="arg-card__punto">
+                  <span class="arg-card__punto-label">${p.label}</span> ${p.texto}
+                </li>`
+              )
+              .join('');
+            return `
+              <div class="arg-card__sec">
+                <h4 class="arg-card__sec-titulo">${s.titulo}</h4>
+                ${intro}
+                ${puntos ? `<ul class="arg-card__puntos">${puntos}</ul>` : ''}
+              </div>`;
+          })
+          .join('');
+      } else if (!isEmpty(a.descripcion)) {
+        // Argumento con descripción simple
+        contenido = `<p class="arg-card__descripcion">${a.descripcion}</p>`;
+      }
 
       const conclusion = isEmpty(a.conclusion)
         ? ''
@@ -149,7 +158,7 @@
 
       const fuente = isEmpty(a.link)
         ? (isEmpty(a.fuente)
-            ? ''
+            ? `<span class="fuente-tag fuente-tag--pendiente"><i class="ti ti-link" aria-hidden="true"></i>Fuente por añadir</span>`
             : `<span class="fuente-tag"><i class="ti ti-quote" aria-hidden="true"></i>${a.fuente}</span>`)
         : `<a class="arg-card__fuente" href="${a.link}" target="_blank" rel="noopener noreferrer">
             <i class="ti ti-external-link" aria-hidden="true"></i>
@@ -170,7 +179,7 @@
         </summary>
         <div class="arg-card__body">
           ${isEmpty(a.intro) ? '' : `<p class="arg-card__intro">${a.intro}</p>`}
-          ${secciones}
+          ${contenido}
           ${conclusion}
           ${fuente ? `<div class="arg-card__footer">${fuente}</div>` : ''}
         </div>`;

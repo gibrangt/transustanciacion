@@ -77,76 +77,79 @@ const DEBATE_DATA = {
     }
   ],
 
-  // ── Sección 4 ───────────────────────────────────────────────────────────
-  // Argumentos de Urbina, argumento por argumento.
-  // `cita`, `fuente` y `link` se dejan vacíos hasta verificar la fuente primaria.
-  argumentos_urbina: [
-    {
-      id: 'afirmaciones-directas',
-      n: 1,
-      titulo: 'Afirmaciones directas de cambio',
-      padre: 'San Ignacio de Antioquía · San Efrén el Sirio · San Agustín',
-      cita: '',
-      fuente: '',
-      link: '',
-      explicacion:
-        'Varios Padres afirman que el pan «pasa a ser» o «es» verdaderamente la carne de Cristo. ' +
-        'No describen un símbolo, sino un cambio en lo que el objeto es: precisamente lo que más tarde ' +
-        'se llamará cambio de sustancia.',
-      solidez:
-        'Son testimonios tempranos y explícitos sobre la identidad real del pan consagrado con el cuerpo de Cristo.'
-    },
-    {
-      id: 'conversion-analogias',
-      n: 2,
-      titulo: 'Conversión real y la analogía de Caná',
-      padre: '', // (Padre concreto: a completar tras verificar)
-      cita: '',
-      fuente: '',
-      link: '',
-      explicacion:
-        'Los Padres recurren a analogías como el agua convertida en vino en las bodas de Caná para explicar ' +
-        'lo que sucede en la Eucaristía. La fuerza de la analogía está en que en Caná la sustancia cambia: ' +
-        'no queda agua «con sabor a vino», sino vino.',
-      solidez:
-        'La analogía elegida implica conversión sustancial, no mera presencia añadida a un pan que sigue siendo pan.'
-    },
-    {
-      id: 'adoracion',
-      n: 3,
-      titulo: 'La adoración eucarística',
-      padre: 'San Ambrosio · San Agustín',
-      cita: '',
-      fuente: '',
-      link: '',
-      explicacion:
-        'Padres como Ambrosio y Agustín invitan a adorar la Eucaristía. Adorar lo que se recibe solo tiene ' +
-        'sentido si se cree que ya no es pan, sino Dios: nadie adora un símbolo sin incurrir en idolatría.',
-      solidez:
-        'La práctica de la adoración presupone la convicción de que la sustancia del pan ha cedido el lugar a Cristo.'
-    },
-    {
-      id: 'apoyo-externo',
-      n: 4,
-      titulo: 'Reconocimiento de eruditos no católicos',
-      padre: '', // No es un Padre: son testigos externos.
-      cita: '',
-      fuente: '',
-      link: '',
-      explicacion:
-        'Filósofos e historiadores protestantes —entre ellos Leibniz, William Lane Craig y Philip Schaff— ' +
-        'reconocen que la idea de un cambio de sustancia, o la transustanciación misma, ya está presente o ' +
-        'en desarrollo en los Padres.',
-      solidez:
-        'Se trata de testigos sin interés confesional en favorecer a Roma; su reconocimiento refuerza la lectura católica.'
-    }
-  ],
+  // ── Sección 4 (Eliminado) ────────────────────────────────────────────────────────
+  // Los argumentos breves del scrollytelling han sido reemplazados por
+  // argumentos_urbina_extendidos, que contiene los 10 argumentos numerados.
+  argumentos_urbina: [],
 
   // ── Sección 4 (cont.) ─────────────────────────────────────────────────────
-  // Argumentos desarrollados como tarjetas expandibles (más extensos que los
-  // resúmenes del scrollytelling). Numeración según la del Dr. Dante Urbina.
-  // El texto se reproduce literalmente, tal como lo provee el usuario.
+  // 10 argumentos de Urbina como tarjetas expandibles.
+  // Numeración según Dr. Dante Urbina. El texto se reproduce literal del usuario.
+  // Argumentos 1-5, 7-10 usan los resúmenes recibidos.
+  // Argumento 6 es la versión detallada ya proporcionada.
   argumentos_urbina_extendidos: [
+    {
+      id: 'afirmaciones-patrísticas',
+      n: 1,
+      titulo: 'Afirmaciones patrísticas directas',
+      padre: 'San Ignacio de Antioquía · San Efrén el Sirio · San Agustín · San Cirilo de Alejandría · San Juan Damasceno',
+      intro:
+        'Sostiene que, aunque no usaron la palabra técnica, los Padres expresaron la idea de un cambio en "lo que es" el pan y el vino.',
+      descripcion:
+        'Cita a San Ignacio de Antioquía, San Efrén el Sirio, San Agustín, San Cirilo de Alejandría y San Juan Damasceno ' +
+        'para mostrar que hablaban del pan convirtiéndose verdaderamente en la carne de Cristo.',
+      fuente: '',
+      link: ''
+    },
+    {
+      id: 'sustancia-especies',
+      n: 2,
+      titulo: 'La distinción entre sustancia y especies',
+      padre: 'San Cirilo de Jerusalén · San Agustín',
+      intro: 'Argumenta que los Padres distinguían entre la apariencia visible y la realidad invisible.',
+      descripcion:
+        'Menciona a San Cirilo de Jerusalén, quien afirmaba que el "aparente pan no es pan", y a San Agustín, ' +
+        'quien distinguía lo que se ve de lo que es la sustancia.',
+      fuente: '',
+      link: ''
+    },
+    {
+      id: 'transustanciacion-conversion',
+      n: 3,
+      titulo: 'La transustanciación implica conversión',
+      padre: 'Múltiples Padres (siglos I-V)',
+      intro:
+        'Indica que los Padres utilizaron términos que implican una conversión real de los elementos (como metabole o transformación).',
+      descripcion:
+        'Cita a una larga lista de autores de oriente y occidente entre los siglos I y V que empleaban este lenguaje de conversión.',
+      fuente: '',
+      link: ''
+    },
+    {
+      id: 'analogias-eucaristicas',
+      n: 4,
+      titulo: 'Las analogías eucarísticas',
+      padre: 'Múltiples Padres',
+      intro: 'Señala que los Padres usaron comparaciones que solo tienen sentido si hay un cambio sustancial.',
+      descripcion:
+        'Ejemplos: la vara de Moisés convertida en serpiente, o el agua convertida en vino en las bodas de Caná. ' +
+        'Estas analogías implican cambio de sustancia, no mera adición de propiedades.',
+      fuente: '',
+      link: ''
+    },
+    {
+      id: 'interpretacion-realista',
+      n: 5,
+      titulo: 'La interpretación realista de las palabras de la última cena',
+      padre: 'San Agustín · Múltiples Padres',
+      intro:
+        'Afirma que los Padres interpretaron "esto es mi cuerpo" de forma literal y realista, no puramente simbólica.',
+      descripcion:
+        'Menciona incluso que San Agustín decía que Cristo "se cargó a sí mismo en sus propias manos" durante la institución de la Eucaristía, ' +
+        'indicando una presencia y cambio verdaderos, no figurados.',
+      fuente: '',
+      link: ''
+    },
     {
       id: 'adoracion-agustin',
       n: 6,
@@ -216,6 +219,55 @@ const DEBATE_DATA = {
         'sino un requisito previo a la comunión, fundamentado en la identidad ontológica entre el sacramento y la carne nacida de María.',
       fuente: 'San Agustín · Enarraciones sobre los Salmos',
       link: 'https://www.augustinus.it/spagnolo/esposizioni_salmi/esposizione_salmo_119_testo.htm'
+    },
+    {
+      id: 'concilios',
+      n: 7,
+      titulo: 'Las afirmaciones de los concilios',
+      padre: 'Concilios de Nicea y Éfeso',
+      intro:
+        'Apela a los concilios de Nicea y Éfeso, argumentando que estos identificaban directamente la Eucaristía con el cuerpo de Cristo.',
+      descripcion:
+        'Estos concilios ecuménicos presentan testimonio del consenso patrístico temprano sobre la realidad de la presencia eucarística.',
+      fuente: '',
+      link: ''
+    },
+    {
+      id: 'filosofos-protestantes',
+      n: 8,
+      titulo: 'Los mayores filósofos protestantes lo refutan',
+      padre: 'William Lane Craig · Gottfried Leibniz',
+      intro:
+        'Utiliza argumentos inductivos citando a eruditos protestantes como William Lane Craig y Gottfried Leibniz.',
+      descripcion:
+        'Estos autores reconocen que los antiguos afirmaban un cambio de sustancia o que la doctrina estaba ya desarrollada en la patrística. ' +
+        'Se trata de testigos sin interés confesional en favorecer a Roma, lo que refuerza la lectura católica.',
+      fuente: '',
+      link: ''
+    },
+    {
+      id: 'historiador-protestante',
+      n: 9,
+      titulo: 'El mayor historiador eclesiástico protestante lo refuta',
+      padre: 'Philip Schaff',
+      intro: 'Cita a Philip Schaff, historiador eclesiástico protestante de reconocida autoridad.',
+      descripcion:
+        'Schaff admite que el período de los padres nicenos estaba fuertemente inclinado hacia la doctrina de la transustanciación, ' +
+        'reconociendo así la antigüedad de esta creencia en la Iglesia antigua.',
+      fuente: '',
+      link: ''
+    },
+    {
+      id: 'indefinicion-protestante',
+      n: 10,
+      titulo: 'La indefinición de la postura protestante',
+      padre: '',
+      intro: 'Critica la división y falta de una postura única entre los protestantes respecto a la Eucaristía.',
+      descripcion:
+        'Contrasta la indefinición protestante respecto a qué es realmente la Eucaristía con la definición clara y consistente de la Iglesia Católica, ' +
+        'lo que sugiere que la postura católica tiene mayor continuidad con la tradición patrística.',
+      fuente: '',
+      link: ''
     }
   ],
 
