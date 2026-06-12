@@ -45,7 +45,6 @@
       <a href="#conflictos">Conflictos</a>
       <a href="#argumentos">Argumentos</a>
       <a href="#objeciones">Objeciones</a>
-      <a href="#fuentes">Fuentes</a>
     </nav>
     <button class="site-nav__toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
       <i class="ti ti-menu-2" aria-hidden="true"></i>
@@ -66,9 +65,35 @@
         </h1>
         <p class="hero__subtitle" id="hero-subtitle"></p>
 
-        <!-- Dialéctica de los dos debatientes -->
+        <!-- Dialéctica de los dos debatientes con avatares -->
         <div class="duelo" id="duelo">
-          <!-- inyectado por app.js -->
+          <div class="duelo__lado duelo__lado--urbina">
+            <span class="duelo__bando">Postura católica</span>
+            <div class="avatar-portrait-container urbina-position">
+              <img
+                src="assets/images/urbina.jpg"
+                alt="Dr. Dante Urbina"
+                class="avatar-portrait"
+              />
+            </div>
+            <h3 class="duelo__nombre">Dr. Dante Urbina</h3>
+            <p class="duelo__postura">Teólogo y filósofo católico, especialista en patrística y apologética eucarística</p>
+          </div>
+          <div class="duelo__vs">
+            <em>vs</em>
+          </div>
+          <div class="duelo__lado duelo__lado--pacheco">
+            <span class="duelo__bando">Postura evangélica</span>
+            <div class="avatar-portrait-container pacheco-position">
+              <img
+                src="assets/images/pacheco.jpg"
+                alt="Sr. Edgar Pacheco"
+                class="avatar-portrait"
+              />
+            </div>
+            <h3 class="duelo__nombre">Sr. Edgar Pacheco</h3>
+            <p class="duelo__postura">Teólogo evangélico reformado, crítico de la transustanciación</p>
+          </div>
         </div>
 
         <p class="hero__tesis" id="hero-tesis"></p>
@@ -163,9 +188,16 @@
       <summary class="arg-card__summary">
         <span class="arg-card__n" aria-hidden="true">01</span>
         <span class="arg-card__head">
-          <span class="arg-card__kicker">Argumento 1</span>
-          <span class="arg-card__titulo">Afirmaciones patrísticas directas</span>
-          <span class="arg-card__padre">San Ignacio de Antioquía · San Efrén el Sirio · San Agustín · San Cirilo de Alejandría · San Juan Damasceno</span>
+          <img
+            src="assets/images/urbina.jpg"
+            alt="Dr. Dante Urbina"
+            class="avatar-small avatar-urbina"
+          />
+          <div>
+            <span class="arg-card__kicker">Argumento 1</span>
+            <span class="arg-card__titulo">Afirmaciones patrísticas directas</span>
+            <span class="arg-card__padre">San Ignacio de Antioquía · San Efrén el Sirio · San Agustín · San Cirilo de Alejandría · San Juan Damasceno</span>
+          </div>
         </span>
         <i class="ti ti-chevron-down arg-card__chevron" aria-hidden="true"></i>
       </summary>
@@ -209,7 +241,14 @@
             </div>
         <p class="arg-card__conclusion"><b>Conclusión del argumento</b>Dante Urbina concluye que estas afirmaciones no son compatibles con una visión puramente simbolista ni con una presencia meramente espiritual, ya que se habla de que el elemento es el cuerpo de Cristo. Tampoco considera que sean compatibles con la consubstanciación (donde permanece la sustancia del pan), porque los Padres no dicen que el pan "contiene" el cuerpo, sino que directamente lo es. Estructura su argumento en el siguiente silogismo: (1) La transustanciación consiste en un cambio de "lo que es"; (2) Los padres de la Iglesia afirmaron un cambio de "lo que es" en la Eucaristía; (3) Por tanto, los padres de la Iglesia afirmaron el concepto de transustanciación, más allá de la palabra técnica.</p>
         <div class="arg-card__respuesta">
-        <h4 class="arg-card__respuesta-titulo">Contraparte de Pacheco</h4>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <img
+            src="assets/images/pacheco.jpg"
+            alt="Sr. Edgar Pacheco"
+            class="avatar-small avatar-pacheco"
+          />
+          <h4 class="arg-card__respuesta-titulo" style="margin: 0;">Contraparte de Pacheco</h4>
+        </div>
         <p class="arg-card__respuesta-contenido">Pacheco sostiene que las afirmaciones de San Ignacio o San Ireneo sobre la Eucaristía como "carne de Cristo" no prueban la transustanciación. Para demostrarlo, cita diversas confesiones protestantes (como la Confesión Belga, la Francesa y los 39 artículos anglicanos) que usan un lenguaje casi idéntico ("comemos su cuerpo y bebemos su sangre") sin aceptar por ello la desaparición de la sustancia del pan. Según él, Urbina confunde la categoría de "presencia real" con la de "transustanciación".</p>
       </div>
         <div class="arg-card__footer"><span class="fuente-tag fuente-tag--pendiente"><i class="ti ti-link" aria-hidden="true"></i>Fuente por añadir</span></div>
@@ -219,9 +258,16 @@
       <summary class="arg-card__summary">
         <span class="arg-card__n" aria-hidden="true">02</span>
         <span class="arg-card__head">
-          <span class="arg-card__kicker">Argumento 2</span>
-          <span class="arg-card__titulo">La distinción entre sustancia y especies</span>
-          <span class="arg-card__padre">San Cirilo de Jerusalén · San Agustín · Padres del Desierto</span>
+          <img
+            src="assets/images/urbina.jpg"
+            alt="Dr. Dante Urbina"
+            class="avatar-small avatar-urbina"
+          />
+          <div>
+            <span class="arg-card__kicker">Argumento 2</span>
+            <span class="arg-card__titulo">La distinción entre sustancia y especies</span>
+            <span class="arg-card__padre">San Cirilo de Jerusalén · San Agustín · Padres del Desierto</span>
+          </div>
         </span>
         <i class="ti ti-chevron-down arg-card__chevron" aria-hidden="true"></i>
       </summary>
@@ -251,7 +297,14 @@
             </div>
         <p class="arg-card__conclusion"><b>Conclusión del argumento</b>El Dr. Urbina concluye que estas citas no representan simplemente una idea genérica e indefinida de "presencia real", sino que constituyen evidencia de las distinciones específicas (sustancia/especies) que son propias de la doctrina de la transustanciación.</p>
         <div class="arg-card__respuesta">
-        <h4 class="arg-card__respuesta-titulo">Contraparte de Pacheco</h4>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <img
+            src="assets/images/pacheco.jpg"
+            alt="Sr. Edgar Pacheco"
+            class="avatar-small avatar-pacheco"
+          />
+          <h4 class="arg-card__respuesta-titulo" style="margin: 0;">Contraparte de Pacheco</h4>
+        </div>
         <p class="arg-card__respuesta-contenido">Sobre el uso que hace San Cirilo de Jerusalén de la palabra metabole (transformación/cambio), Pacheco argumenta que Cirilo aplica ese mismo término al aceite del crisma. Razona que, si Urbina usa a Cirilo para probar la transustanciación del pan, tendría que aceptar también una "transustanciación del aceite", algo que la Iglesia Católica no enseña.</p>
       </div>
         <div class="arg-card__footer"><span class="fuente-tag fuente-tag--pendiente"><i class="ti ti-link" aria-hidden="true"></i>Fuente por añadir</span></div>
@@ -261,9 +314,16 @@
       <summary class="arg-card__summary">
         <span class="arg-card__n" aria-hidden="true">03</span>
         <span class="arg-card__head">
-          <span class="arg-card__kicker">Argumento 3</span>
-          <span class="arg-card__titulo">La transustanciación implica conversión</span>
-          <span class="arg-card__padre">San Ireneo · Orígenes · Serapión · San Atanasio · San Ambrosio · San Cirilo de Jerusalén · San Gregorio de Nisa · San Cirilo de Alejandría · San Juan Crisóstomo</span>
+          <img
+            src="assets/images/urbina.jpg"
+            alt="Dr. Dante Urbina"
+            class="avatar-small avatar-urbina"
+          />
+          <div>
+            <span class="arg-card__kicker">Argumento 3</span>
+            <span class="arg-card__titulo">La transustanciación implica conversión</span>
+            <span class="arg-card__padre">San Ireneo · Orígenes · Serapión · San Atanasio · San Ambrosio · San Cirilo de Jerusalén · San Gregorio de Nisa · San Cirilo de Alejandría · San Juan Crisóstomo</span>
+          </div>
         </span>
         <i class="ti ti-chevron-down arg-card__chevron" aria-hidden="true"></i>
       </summary>
@@ -307,7 +367,14 @@
             </div>
         <p class="arg-card__conclusion"><b>Conclusión del argumento</b>El Dr. Urbina concluye que la fe de los Padres de la Iglesia deja "recontrarrefutada" la postura reformada clásica, ya que los antiguos hablaban consistentemente en términos de una conversión que no es compatible con una mera presencia simbólica o espiritual sin cambio ontológico.</p>
         <div class="arg-card__respuesta">
-        <h4 class="arg-card__respuesta-titulo">Contraparte de Pacheco</h4>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <img
+            src="assets/images/pacheco.jpg"
+            alt="Sr. Edgar Pacheco"
+            class="avatar-small avatar-pacheco"
+          />
+          <h4 class="arg-card__respuesta-titulo" style="margin: 0;">Contraparte de Pacheco</h4>
+        </div>
         <p class="arg-card__respuesta-contenido">Pacheco argumenta que el concepto de "cambio" en los Padres es ambiguo y no necesariamente ontológico o sustancial. Sostiene que existen cambios sacramentales, de uso, de función o de gracia que no implican la aniquilación de la naturaleza del objeto, y que Urbina comete un non sequitur al asumir que todo cambio mencionado por los Padres es de tipo aristotélico.</p>
       </div>
         <div class="arg-card__footer"><span class="fuente-tag fuente-tag--pendiente"><i class="ti ti-link" aria-hidden="true"></i>Fuente por añadir</span></div>
@@ -317,9 +384,16 @@
       <summary class="arg-card__summary">
         <span class="arg-card__n" aria-hidden="true">04</span>
         <span class="arg-card__head">
-          <span class="arg-card__kicker">Argumento 4</span>
-          <span class="arg-card__titulo">Las analogías eucarísticas</span>
-          <span class="arg-card__padre">San Ambrosio · San Cirilo de Jerusalén · San Gaudencio de Brescia</span>
+          <img
+            src="assets/images/urbina.jpg"
+            alt="Dr. Dante Urbina"
+            class="avatar-small avatar-urbina"
+          />
+          <div>
+            <span class="arg-card__kicker">Argumento 4</span>
+            <span class="arg-card__titulo">Las analogías eucarísticas</span>
+            <span class="arg-card__padre">San Ambrosio · San Cirilo de Jerusalén · San Gaudencio de Brescia</span>
+          </div>
         </span>
         <i class="ti ti-chevron-down arg-card__chevron" aria-hidden="true"></i>
       </summary>
@@ -342,7 +416,14 @@
             </div>
         <p class="arg-card__conclusion"><b>Conclusión del argumento</b>El Dr. Urbina concluye este punto afirmando que Pacheco no podría emplear estas analogías para defender su propia postura (que rechaza la conversión sustancial), lo que, según él, demuestra que la fe de su oponente no coincide con la de los Padres de la Iglesia. Las analogías patrísticas presuponen una transustanciación verdadera, no meramente una presencia espiritual o simbólica.</p>
         <div class="arg-card__respuesta">
-        <h4 class="arg-card__respuesta-titulo">Contraparte de Pacheco</h4>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <img
+            src="assets/images/pacheco.jpg"
+            alt="Sr. Edgar Pacheco"
+            class="avatar-small avatar-pacheco"
+          />
+          <h4 class="arg-card__respuesta-titulo" style="margin: 0;">Contraparte de Pacheco</h4>
+        </div>
         <p class="arg-card__respuesta-contenido">Pacheco responde que el concepto de "cambio" en los Padres es ambiguo y no necesariamente ontológico o sustancial. Argumenta que existen cambios sacramentales, de uso, de función o de gracia que no implican la aniquilación de la naturaleza del objeto, y que Urbina comete un non sequitur al asumir que todo cambio mencionado por los Padres es de tipo aristotélico.</p>
       </div>
         <div class="arg-card__footer"><span class="fuente-tag fuente-tag--pendiente"><i class="ti ti-link" aria-hidden="true"></i>Fuente por añadir</span></div>
@@ -352,9 +433,16 @@
       <summary class="arg-card__summary">
         <span class="arg-card__n" aria-hidden="true">05</span>
         <span class="arg-card__head">
-          <span class="arg-card__kicker">Argumento 5</span>
-          <span class="arg-card__titulo">La interpretación realista de las palabras de la última cena</span>
-          <span class="arg-card__padre">Afraates · Cirilo de Alejandría · Gregorio de Nisa · Teodoro de Mopsuestia · Juan Crisóstomo · Macario Magnes · San Agustín</span>
+          <img
+            src="assets/images/urbina.jpg"
+            alt="Dr. Dante Urbina"
+            class="avatar-small avatar-urbina"
+          />
+          <div>
+            <span class="arg-card__kicker">Argumento 5</span>
+            <span class="arg-card__titulo">La interpretación realista de las palabras de la última cena</span>
+            <span class="arg-card__padre">Afraates · Cirilo de Alejandría · Gregorio de Nisa · Teodoro de Mopsuestia · Juan Crisóstomo · Macario Magnes · San Agustín</span>
+          </div>
         </span>
         <i class="ti ti-chevron-down arg-card__chevron" aria-hidden="true"></i>
       </summary>
@@ -384,9 +472,16 @@
       <summary class="arg-card__summary">
         <span class="arg-card__n" aria-hidden="true">06</span>
         <span class="arg-card__head">
-          <span class="arg-card__kicker">Argumento 6</span>
-          <span class="arg-card__titulo">La Adoración Eucarística como prueba de la Transustanciación</span>
-          <span class="arg-card__padre">San Agustín</span>
+          <img
+            src="assets/images/urbina.jpg"
+            alt="Dr. Dante Urbina"
+            class="avatar-small avatar-urbina"
+          />
+          <div>
+            <span class="arg-card__kicker">Argumento 6</span>
+            <span class="arg-card__titulo">La Adoración Eucarística como prueba de la Transustanciación</span>
+            <span class="arg-card__padre">San Agustín</span>
+          </div>
         </span>
         <i class="ti ti-chevron-down arg-card__chevron" aria-hidden="true"></i>
       </summary>
@@ -424,7 +519,14 @@
             </div>
         <p class="arg-card__conclusion"><b>Conclusión del argumento</b>El texto de San Agustín sobre el Salmo 98 demuestra que en el siglo V la adoración de la Eucaristía no era una opción, sino un requisito previo a la comunión, fundamentado en la identidad ontológica entre el sacramento y la carne nacida de María.</p>
         <div class="arg-card__respuesta">
-        <h4 class="arg-card__respuesta-titulo">Contraparte de Pacheco</h4>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <img
+            src="assets/images/pacheco.jpg"
+            alt="Sr. Edgar Pacheco"
+            class="avatar-small avatar-pacheco"
+          />
+          <h4 class="arg-card__respuesta-titulo" style="margin: 0;">Contraparte de Pacheco</h4>
+        </div>
         <p class="arg-card__respuesta-contenido">Pacheco afirma que la adoración de Cristo en el sacramento solo probaría una "presencia real digna de oración", pero no la desaparición de la sustancia del pan. Señala que luteranos, anglicanos y ortodoxos pueden practicar formas de adoración o reverencia sin aceptar la metafísica romana de la transustanciación.</p>
       </div>
         <div class="arg-card__footer"><a class="arg-card__fuente" href="https://www.augustinus.it/spagnolo/esposizioni_salmi/esposizione_salmo_119_testo.htm" target="_blank" rel="noopener noreferrer">
@@ -437,9 +539,16 @@
       <summary class="arg-card__summary">
         <span class="arg-card__n" aria-hidden="true">07</span>
         <span class="arg-card__head">
-          <span class="arg-card__kicker">Argumento 7</span>
-          <span class="arg-card__titulo">Las afirmaciones de los concilios</span>
-          <span class="arg-card__padre">Concilio de Nicea · Concilio de Éfeso</span>
+          <img
+            src="assets/images/urbina.jpg"
+            alt="Dr. Dante Urbina"
+            class="avatar-small avatar-urbina"
+          />
+          <div>
+            <span class="arg-card__kicker">Argumento 7</span>
+            <span class="arg-card__titulo">Las afirmaciones de los concilios</span>
+            <span class="arg-card__padre">Concilio de Nicea · Concilio de Éfeso</span>
+          </div>
         </span>
         <i class="ti ti-chevron-down arg-card__chevron" aria-hidden="true"></i>
       </summary>
@@ -462,7 +571,14 @@
             </div>
         <p class="arg-card__conclusion"><b>Conclusión del argumento</b>El ponente concluye con un razonamiento lógico: dado que al inicio del rito todos están de acuerdo en que la sustancia es pan, pero el concilio afirma que luego es "la carne misma del Verbo", se deduce necesariamente que ha ocurrido un cambio de "lo que es". Por lo tanto, sostiene que la transustanciación está implícita en las definiciones de estos concilios antiguos, y que los mismos padres que condenaron el arrianismo también defendieron, aunque sin la palabra técnica, la realidad de la conversión eucarística.</p>
         <div class="arg-card__respuesta">
-        <h4 class="arg-card__respuesta-titulo">Contraparte de Pacheco</h4>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <img
+            src="assets/images/pacheco.jpg"
+            alt="Sr. Edgar Pacheco"
+            class="avatar-small avatar-pacheco"
+          />
+          <h4 class="arg-card__respuesta-titulo" style="margin: 0;">Contraparte de Pacheco</h4>
+        </div>
         <p class="arg-card__respuesta-contenido">Pacheco contraargumenta que los concilios que definen la transustanciación (Letrán IV y Trento) son concilios locales occidentales y no universales como Nicea. Sostiene que si la doctrina fuera universal y clara desde Nicea, no habrían existido los debates medievales del siglo IX (como el de Ratramno de Corbie) ni la oposición de otras iglesias antiguas.</p>
       </div>
         <div class="arg-card__footer"><span class="fuente-tag fuente-tag--pendiente"><i class="ti ti-link" aria-hidden="true"></i>Fuente por añadir</span></div>
@@ -472,9 +588,16 @@
       <summary class="arg-card__summary">
         <span class="arg-card__n" aria-hidden="true">08</span>
         <span class="arg-card__head">
-          <span class="arg-card__kicker">Argumento 8</span>
-          <span class="arg-card__titulo">Los mayores filósofos protestantes lo refutan</span>
-          <span class="arg-card__padre">William Lane Craig · Gottfried Leibniz</span>
+          <img
+            src="assets/images/urbina.jpg"
+            alt="Dr. Dante Urbina"
+            class="avatar-small avatar-urbina"
+          />
+          <div>
+            <span class="arg-card__kicker">Argumento 8</span>
+            <span class="arg-card__titulo">Los mayores filósofos protestantes lo refutan</span>
+            <span class="arg-card__padre">William Lane Craig · Gottfried Leibniz</span>
+          </div>
         </span>
         <i class="ti ti-chevron-down arg-card__chevron" aria-hidden="true"></i>
       </summary>
@@ -497,7 +620,14 @@
             </div>
         <p class="arg-card__conclusion"><b>Conclusión del argumento</b>El Dr. Urbina concluye que, si incluso los mayores eruditos y filósofos del protestantismo reconocen que los Padres de la Iglesia enseñaban un cambio de sustancia equivalente a la transustanciación, la postura de una negación total de esta evidencia por parte de Pacheco queda desestimada. Según Urbina, esto demuestra que la transustanciación no es un invento posterior de la Iglesia Católica, sino el reconocimiento de una creencia antigua que el mismo mundo protestante ha tenido que admitir al estudiar las fuentes patrísticas.</p>
         <div class="arg-card__respuesta">
-        <h4 class="arg-card__respuesta-titulo">Contraparte de Pacheco</h4>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <img
+            src="assets/images/pacheco.jpg"
+            alt="Sr. Edgar Pacheco"
+            class="avatar-small avatar-pacheco"
+          />
+          <h4 class="arg-card__respuesta-titulo" style="margin: 0;">Contraparte de Pacheco</h4>
+        </div>
         <p class="arg-card__respuesta-contenido">Pacheco utiliza al mismo historiador citado por Urbina, Philip Schaff, para señalar que es difícil atribuirle a San Ireneo la doctrina de la transustanciación, ya que Ireneo habla de "dos realidades" (una terrenal y otra celestial) en el pan. Además, desestima las citas de William Lane Craig o Leibniz como irrelevantes para determinar qué escribieron realmente los Padres.</p>
       </div>
         <div class="arg-card__footer"><a class="arg-card__fuente" href="https://www.reasonablefaith.org/podcasts/defenders-podcast-series-3/s3-doctrine-of-the-church/doctrine-of-the-church-part-9" target="_blank" rel="noopener noreferrer">
@@ -510,9 +640,16 @@
       <summary class="arg-card__summary">
         <span class="arg-card__n" aria-hidden="true">09</span>
         <span class="arg-card__head">
-          <span class="arg-card__kicker">Argumento 9</span>
-          <span class="arg-card__titulo">El mayor historiador eclesiástico protestante lo refuta</span>
-          <span class="arg-card__padre">Philip Schaff</span>
+          <img
+            src="assets/images/urbina.jpg"
+            alt="Dr. Dante Urbina"
+            class="avatar-small avatar-urbina"
+          />
+          <div>
+            <span class="arg-card__kicker">Argumento 9</span>
+            <span class="arg-card__titulo">El mayor historiador eclesiástico protestante lo refuta</span>
+            <span class="arg-card__padre">Philip Schaff</span>
+          </div>
         </span>
         <i class="ti ti-chevron-down arg-card__chevron" aria-hidden="true"></i>
       </summary>
@@ -537,7 +674,14 @@
             </div>
         <p class="arg-card__conclusion"><b>Conclusión del argumento</b>El Dr. Urbina utiliza este testimonio para señalar que la postura de Pacheco no solo es rechazada por la teología católica, sino que carece de respaldo incluso entre los historiadores más prestigiosos de su propia confesión religiosa. Según Urbina, esto refuerza la idea de que la transustanciación no es un invento medieval, sino una doctrina cuyas raíces y desarrollo ya eran evidentes en los primeros siglos del cristianismo, según reconocen hasta los historiadores protestantes más autorizados.</p>
         <div class="arg-card__respuesta">
-        <h4 class="arg-card__respuesta-titulo">Contraparte de Pacheco</h4>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <img
+            src="assets/images/pacheco.jpg"
+            alt="Sr. Edgar Pacheco"
+            class="avatar-small avatar-pacheco"
+          />
+          <h4 class="arg-card__respuesta-titulo" style="margin: 0;">Contraparte de Pacheco</h4>
+        </div>
         <p class="arg-card__respuesta-contenido">Pacheco utiliza al mismo historiador citado por Urbina, Philip Schaff, para señalar que es difícil atribuirle a San Ireneo la doctrina de la transustanciación, ya que Ireneo habla de "dos realidades" (una terrenal y otra celestial) en el pan. Además, desestima las citas de William Lane Craig o Leibniz como irrelevantes para determinar qué escribieron realmente los Padres.</p>
       </div>
         <div class="arg-card__footer"><span class="fuente-tag fuente-tag--pendiente"><i class="ti ti-link" aria-hidden="true"></i>Fuente por añadir</span></div>
@@ -547,9 +691,15 @@
       <summary class="arg-card__summary">
         <span class="arg-card__n" aria-hidden="true">10</span>
         <span class="arg-card__head">
-          <span class="arg-card__kicker">Argumento 10</span>
-          <span class="arg-card__titulo">La indefinición de la postura protestante</span>
-          
+          <img
+            src="assets/images/urbina.jpg"
+            alt="Dr. Dante Urbina"
+            class="avatar-small avatar-urbina"
+          />
+          <div>
+            <span class="arg-card__kicker">Argumento 10</span>
+            <span class="arg-card__titulo">La indefinición de la postura protestante</span>
+          </div>
         </span>
         <i class="ti ti-chevron-down arg-card__chevron" aria-hidden="true"></i>
       </summary>
@@ -582,9 +732,15 @@
       <summary class="objecion-card__summary">
         <span class="objecion-card__n" aria-hidden="true">01</span>
         <span class="objecion-card__head">
-          <span class="objecion-card__kicker">Objeción 1</span>
-          <span class="objecion-card__titulo">Exigencia de Consenso Unánime y Carga de la Prueba</span>
-          
+          <img
+            src="assets/images/pacheco.jpg"
+            alt="Sr. Edgar Pacheco"
+            class="avatar-small avatar-pacheco"
+          />
+          <div>
+            <span class="objecion-card__kicker">Objeción 1</span>
+            <span class="objecion-card__titulo">Exigencia de Consenso Unánime y Carga de la Prueba</span>
+          </div>
         </span>
         <i class="ti ti-chevron-down objecion-card__chevron" aria-hidden="true"></i>
       </summary>
@@ -592,7 +748,14 @@
         <p class="objecion-card__intro">Basado en el Concilio de Trento y el credo de Pío IV, Pacheco sostiene que Roma está obligada a demostrar que la transustanciación fue creída siempre y por todos bajo un "consentimiento unánime".</p>
         <p class="objecion-card__descripcion">Argumenta que Dante Urbina no debe probar solo una "presencia real" o lenguaje reverente, sino la doctrina específica de la conversión ontológica donde desaparece la sustancia del pan.</p>
         <div class="objecion-card__respuesta">
-        <h4 class="objecion-card__respuesta-titulo">Respuesta de Urbina</h4>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <img
+            src="assets/images/urbina.jpg"
+            alt="Dr. Dante Urbina"
+            class="avatar-small avatar-urbina"
+          />
+          <h4 class="objecion-card__respuesta-titulo" style="margin: 0;">Respuesta de Urbina</h4>
+        </div>
         <p class="objecion-card__respuesta-contenido">Urbina responde que Pacheco también tiene una "pesada carga de la prueba" al haber afirmado de forma tajante que la doctrina no se encuentra en "ni un solo" padre. Respecto al consenso, sostiene que en teología no se requiere un consenso "matemático" de cada individuo, sino un **consenso moral**, citando al erudito protestante Leibniz, quien afirma que los antiguos reconocieron "universalmente" un cambio de sustancia.</p>
       </div>
         <div class="objecion-card__footer"><span class="fuente-tag fuente-tag--pendiente"><i class="ti ti-link" aria-hidden="true"></i>Fuente por añadir</span></div>
@@ -602,9 +765,16 @@
       <summary class="objecion-card__summary">
         <span class="objecion-card__n" aria-hidden="true">02</span>
         <span class="objecion-card__head">
-          <span class="objecion-card__kicker">Objeción 2</span>
-          <span class="objecion-card__titulo">Insuficiencia del Testimonio Patrístico</span>
-          <span class="objecion-card__padre">Clemente de Roma · Policarpo · Atenágoras</span>
+          <img
+            src="assets/images/pacheco.jpg"
+            alt="Sr. Edgar Pacheco"
+            class="avatar-small avatar-pacheco"
+          />
+          <div>
+            <span class="objecion-card__kicker">Objeción 2</span>
+            <span class="objecion-card__titulo">Insuficiencia del Testimonio Patrístico</span>
+            <span class="objecion-card__padre">Clemente de Roma · Policarpo · Atenágoras</span>
+          </div>
         </span>
         <i class="ti ti-chevron-down objecion-card__chevron" aria-hidden="true"></i>
       </summary>
@@ -612,7 +782,14 @@
         <p class="objecion-card__intro">Pacheco presenta una lista de más de 30 padres de la Iglesia que no tratan el tema de la Eucaristía de forma relevante para este dogma o que guardan silencio total sobre cuestiones metafísicas de la sustancia.</p>
         <p class="objecion-card__descripcion">Esto, según él, invalida cualquier pretensión de unanimidad patrística. Si más de 30 Padres guardaban silencio o no abordaban el tema con la precisión que Urbina exige, entonces no puede hablarse de un consenso ecuménico.</p>
         <div class="objecion-card__respuesta">
-        <h4 class="objecion-card__respuesta-titulo">Respuesta de Urbina</h4>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <img
+            src="assets/images/urbina.jpg"
+            alt="Dr. Dante Urbina"
+            class="avatar-small avatar-urbina"
+          />
+          <h4 class="objecion-card__respuesta-titulo" style="margin: 0;">Respuesta de Urbina</h4>
+        </div>
         <p class="objecion-card__respuesta-contenido">Urbina califica esta objeción como una **"gigantesca falacia de argumento desde el silencio"**. Argumenta que el hecho de que algunos padres no trataran el tema o sus escritos se hayan perdido no anula la evidencia positiva y explícita de aquellos que sí hablaron claramente de un cambio sustancial.</p>
       </div>
         <div class="objecion-card__footer"><span class="fuente-tag fuente-tag--pendiente"><i class="ti ti-link" aria-hidden="true"></i>Fuente por añadir</span></div>
@@ -622,9 +799,15 @@
       <summary class="objecion-card__summary">
         <span class="objecion-card__n" aria-hidden="true">03</span>
         <span class="objecion-card__head">
-          <span class="objecion-card__kicker">Objeción 3</span>
-          <span class="objecion-card__titulo">Anacronismo y Retroproyección Dogmática</span>
-          
+          <img
+            src="assets/images/pacheco.jpg"
+            alt="Sr. Edgar Pacheco"
+            class="avatar-small avatar-pacheco"
+          />
+          <div>
+            <span class="objecion-card__kicker">Objeción 3</span>
+            <span class="objecion-card__titulo">Anacronismo y Retroproyección Dogmática</span>
+          </div>
         </span>
         <i class="ti ti-chevron-down objecion-card__chevron" aria-hidden="true"></i>
       </summary>
@@ -632,7 +815,14 @@
         <p class="objecion-card__intro">Acusa a la postura católica de imponer categorías aristotélicas y escolásticas posteriores (como "accidentes sin sujeto") en textos antiguos que no manejaban esa precisión conceptual.</p>
         <p class="objecion-card__descripcion">Sostiene que Roma lee "presencia real" e inmediatamente asume que es "transustanciación", lo cual considera una definición paupérrima de categorías. Los Padres no pensaban en términos de aristotelismo; proyectar esa filosofía sobre ellos es anacrónico.</p>
         <div class="objecion-card__respuesta">
-        <h4 class="objecion-card__respuesta-titulo">Respuesta de Urbina</h4>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <img
+            src="assets/images/urbina.jpg"
+            alt="Dr. Dante Urbina"
+            class="avatar-small avatar-urbina"
+          />
+          <h4 class="objecion-card__respuesta-titulo" style="margin: 0;">Respuesta de Urbina</h4>
+        </div>
         <p class="objecion-card__respuesta-contenido">Urbina aclara que la doctrina no depende del sistema de Aristóteles. Cita a **San Agustín**, quien, bajo una influencia neoplatónica, ya distinguía entre lo que se ve (apariencia) y lo que la cosa es (sustancia). Además, corrige una cita de Pacheco sobre el teólogo Schillebeeckx, señalando que este afirma que la **"intuición patrística básica"** era la misma que el dogma de Trento, independientemente del lenguaje filosófico usado.</p>
       </div>
         <div class="objecion-card__footer"><span class="fuente-tag fuente-tag--pendiente"><i class="ti ti-link" aria-hidden="true"></i>Fuente por añadir</span></div>
@@ -642,9 +832,16 @@
       <summary class="objecion-card__summary">
         <span class="objecion-card__n" aria-hidden="true">04</span>
         <span class="objecion-card__head">
-          <span class="objecion-card__kicker">Objeción 4</span>
-          <span class="objecion-card__titulo">El Caso del Papa Gelasio I (Evidencia Contraria)</span>
-          <span class="objecion-card__padre">Papa Gelasio I</span>
+          <img
+            src="assets/images/pacheco.jpg"
+            alt="Sr. Edgar Pacheco"
+            class="avatar-small avatar-pacheco"
+          />
+          <div>
+            <span class="objecion-card__kicker">Objeción 4</span>
+            <span class="objecion-card__titulo">El Caso del Papa Gelasio I (Evidencia Contraria)</span>
+            <span class="objecion-card__padre">Papa Gelasio I</span>
+          </div>
         </span>
         <i class="ti ti-chevron-down objecion-card__chevron" aria-hidden="true"></i>
       </summary>
@@ -652,7 +849,14 @@
         <p class="objecion-card__intro">Pacheco destaca que el Papa Gelasio I afirmó explícitamente que en el sacramento "no deja de existir la sustancia o naturaleza del pan y del vino".</p>
         <p class="objecion-card__descripcion">Argumenta que si un obispo de Roma pudo sostener la permanencia de la sustancia sin ser considerado hereje, la transustanciación no podía ser una creencia universal en el siglo V. Un Papa del siglo V rechazando implícitamente la transustanciación es una prueba contundente en su contra.</p>
         <div class="objecion-card__respuesta">
-        <h4 class="objecion-card__respuesta-titulo">Respuesta de Urbina</h4>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <img
+            src="assets/images/urbina.jpg"
+            alt="Dr. Dante Urbina"
+            class="avatar-small avatar-urbina"
+          />
+          <h4 class="objecion-card__respuesta-titulo" style="margin: 0;">Respuesta de Urbina</h4>
+        </div>
         <p class="objecion-card__respuesta-contenido">Urbina presenta dos defensas: primero, sostiene que la autoría de la obra atribuida a Gelasio es **"altamente disputada" o espuria** según expertos como Jesús Solano y D.A. Carson. Segundo, explica que en el lenguaje neoplatónico de la época, la palabra "sustancia" podía usarse para referirse a la naturaleza material o visible (lo que hoy llamamos especies), por lo que decir que la sustancia permanece no contradice necesariamente que haya un cambio ontológico profundo.</p>
       </div>
         <div class="objecion-card__footer"><span class="fuente-tag fuente-tag--pendiente"><i class="ti ti-link" aria-hidden="true"></i>Fuente por añadir</span></div>
@@ -662,9 +866,15 @@
       <summary class="objecion-card__summary">
         <span class="objecion-card__n" aria-hidden="true">05</span>
         <span class="objecion-card__head">
-          <span class="objecion-card__kicker">Objeción 5</span>
-          <span class="objecion-card__titulo">Confusión de Categorías Eucarísticas</span>
-          
+          <img
+            src="assets/images/pacheco.jpg"
+            alt="Sr. Edgar Pacheco"
+            class="avatar-small avatar-pacheco"
+          />
+          <div>
+            <span class="objecion-card__kicker">Objeción 5</span>
+            <span class="objecion-card__titulo">Confusión de Categorías Eucarísticas</span>
+          </div>
         </span>
         <i class="ti ti-chevron-down objecion-card__chevron" aria-hidden="true"></i>
       </summary>
@@ -672,7 +882,14 @@
         <p class="objecion-card__intro">Pacheco explica que existen múltiples modelos de presencia (consubstanciación, presencia espiritual real, memorialismo, transignificación) y que el uso de lenguaje realista en los padres ("esto es mi cuerpo") no implica necesariamente el modelo de la transustanciación romana.</p>
         <p class="objecion-card__descripcion">El hecho de que los Padres usen lenguaje realista no significa que creyeran en la doctrina específica de Trento. Podrían haber creído en presencia real de otros modos, sin que eso equivalga a transustanciación.</p>
         <div class="objecion-card__respuesta">
-        <h4 class="objecion-card__respuesta-titulo">Respuesta de Urbina</h4>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <img
+            src="assets/images/urbina.jpg"
+            alt="Dr. Dante Urbina"
+            class="avatar-small avatar-urbina"
+          />
+          <h4 class="objecion-card__respuesta-titulo" style="margin: 0;">Respuesta de Urbina</h4>
+        </div>
         <p class="objecion-card__respuesta-contenido">Urbina argumenta que sus pruebas no se limitan a una "presencia real genérica", sino que demuestran específicamente la transustanciación porque los padres hablan de una **conversión** donde el pan "pasa a ser" o "ya no es" pan. Esto excluye la consubstanciación (donde el pan permanece) y el simbolismo.</p>
       </div>
         <div class="objecion-card__footer"><span class="fuente-tag fuente-tag--pendiente"><i class="ti ti-link" aria-hidden="true"></i>Fuente por añadir</span></div>
@@ -682,9 +899,16 @@
       <summary class="objecion-card__summary">
         <span class="objecion-card__n" aria-hidden="true">06</span>
         <span class="objecion-card__head">
-          <span class="objecion-card__kicker">Objeción 6</span>
-          <span class="objecion-card__titulo">Inexistencia de Claridad Histórica (Debates Medievales)</span>
-          <span class="objecion-card__padre">Pascasio Radberto · Ratramno de Corbie</span>
+          <img
+            src="assets/images/pacheco.jpg"
+            alt="Sr. Edgar Pacheco"
+            class="avatar-small avatar-pacheco"
+          />
+          <div>
+            <span class="objecion-card__kicker">Objeción 6</span>
+            <span class="objecion-card__titulo">Inexistencia de Claridad Histórica (Debates Medievales)</span>
+            <span class="objecion-card__padre">Pascasio Radberto · Ratramno de Corbie</span>
+          </div>
         </span>
         <i class="ti ti-chevron-down objecion-card__chevron" aria-hidden="true"></i>
       </summary>
@@ -692,7 +916,14 @@
         <p class="objecion-card__intro">Pacheco señala que las controversias del siglo IX entre Pascasio Radberto y Ratramno de Corbie demuestran que la tradición no era unánime ni obvia.</p>
         <p class="objecion-card__descripcion">Si la transustanciación hubiera sido la lectura clara y evidente de los padres antiguos, tales debates habrían sido innecesarios. La existencia de estas controversias demuestra que la tradición patrística permitía interpretaciones diversas.</p>
         <div class="objecion-card__respuesta">
-        <h4 class="objecion-card__respuesta-titulo">Respuesta de Urbina</h4>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <img
+            src="assets/images/urbina.jpg"
+            alt="Dr. Dante Urbina"
+            class="avatar-small avatar-urbina"
+          />
+          <h4 class="objecion-card__respuesta-titulo" style="margin: 0;">Respuesta de Urbina</h4>
+        </div>
         <p class="objecion-card__respuesta-contenido">Urbina afirma que estos debates eran sobre **terminología y modo de expresión**, no sobre el fondo de la doctrina. Cita al propio Ratramno (supuesto opositor) diciendo que los elementos "no son la misma cosa que eran antes" y han "experimentado cambio", lo cual cumple con la definición básica de transustanciación: un cambio en lo que la cosa es.</p>
       </div>
         <div class="objecion-card__footer"><span class="fuente-tag fuente-tag--pendiente"><i class="ti ti-link" aria-hidden="true"></i>Fuente por añadir</span></div>
@@ -702,9 +933,15 @@
       <summary class="objecion-card__summary">
         <span class="objecion-card__n" aria-hidden="true">07</span>
         <span class="objecion-card__head">
-          <span class="objecion-card__kicker">Objeción 7</span>
-          <span class="objecion-card__titulo">Circularidad y Petición de Principio</span>
-          
+          <img
+            src="assets/images/pacheco.jpg"
+            alt="Sr. Edgar Pacheco"
+            class="avatar-small avatar-pacheco"
+          />
+          <div>
+            <span class="objecion-card__kicker">Objeción 7</span>
+            <span class="objecion-card__titulo">Circularidad y Petición de Principio</span>
+          </div>
         </span>
         <i class="ti ti-chevron-down objecion-card__chevron" aria-hidden="true"></i>
       </summary>
@@ -712,7 +949,14 @@
         <p class="objecion-card__intro">Pacheco concluye que el argumento católico es circular: define la doctrina mediante Trento, interpreta a los padres a través de ese lente y luego afirma que los padres prueban Trento, sin permitir que los autores antiguos hablen en su propio contexto y gramática teológica.</p>
         <p class="objecion-card__descripcion">El método es vicioso: presuponenla conclusión que quieren probar. Esto invalida todo el edificio argumentativo de Urbina, pues se basa en una interpretación forzada de los Padres para hacerlos encajar en categorías medievales.</p>
         <div class="objecion-card__respuesta">
-        <h4 class="objecion-card__respuesta-titulo">Respuesta de Urbina</h4>
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <img
+            src="assets/images/urbina.jpg"
+            alt="Dr. Dante Urbina"
+            class="avatar-small avatar-urbina"
+          />
+          <h4 class="objecion-card__respuesta-titulo" style="margin: 0;">Respuesta de Urbina</h4>
+        </div>
         <p class="objecion-card__respuesta-contenido">Urbina rechaza que esté imponiendo una lectura romana. Para evitar la circularidad, utiliza definiciones de "sustancia" de fuentes neutrales (como diccionarios de filosofía) y apela al testimonio de **historiadores y filósofos protestantes** (como Philip Schaff y William Lane Craig), quienes reconocen que los padres enseñaban un cambio de sustancia o una doctrina plenamente desarrollada.</p>
       </div>
         <div class="objecion-card__footer"><span class="fuente-tag fuente-tag--pendiente"><i class="ti ti-link" aria-hidden="true"></i>Fuente por añadir</span></div>
@@ -721,39 +965,6 @@
       </div>
     </section>
 
-    <!-- ╔══════════════════════════════════════════════════════════╗ -->
-    <!-- ║ 6 · FUENTES Y RECURSOS                                    ║ -->
-    <!-- ╚══════════════════════════════════════════════════════════╝ -->
-    <section class="fuentes" id="fuentes">
-      <div class="section-head">
-        <span class="section-head__num">06</span>
-        <p class="kicker">Para verificar y seguir estudiando</p>
-        <h2 class="section-head__title">Fuentes y recursos</h2>
-      </div>
-
-      <div class="fuentes__grid">
-        <div class="fuentes__col">
-          <h3 class="fuentes__col-title"><i class="ti ti-scroll" aria-hidden="true"></i> Fuentes primarias</h3>
-          <ul class="fuentes__list" id="fuentes-primarias">
-            <!-- inyectado por app.js -->
-          </ul>
-        </div>
-
-        <div class="fuentes__col">
-          <h3 class="fuentes__col-title"><i class="ti ti-book-2" aria-hidden="true"></i> Fuentes secundarias</h3>
-          <ul class="fuentes__list" id="fuentes-secundarias">
-            <!-- inyectado por app.js -->
-          </ul>
-        </div>
-
-        <div class="fuentes__col">
-          <h3 class="fuentes__col-title"><i class="ti ti-archive" aria-hidden="true"></i> Repositorios</h3>
-          <ul class="fuentes__list" id="fuentes-repositorios">
-            <!-- inyectado por app.js -->
-          </ul>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">

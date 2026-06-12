@@ -29,17 +29,32 @@
     $('#hero-subtitle').textContent = DATA.meta.subtitulo;
     $('#hero-tesis').textContent = DATA.meta.tesis;
 
-    const { urbina, pacheco } = DATA.debatientes;
-    const lado = (d, mod) => `
-      <div class="duelo__lado duelo__lado--${mod}">
-        <span class="duelo__bando">Postura ${d.bando}</span>
-        <span class="duelo__nombre">${d.nombre}</span>
-        <span class="duelo__postura">${d.postura}</span>
-      </div>`;
-    $('#duelo').innerHTML =
-      lado(urbina, 'urbina') +
-      '<div class="duelo__vs" aria-hidden="true">vs</div>' +
-      lado(pacheco, 'pacheco');
+    // El duelo ahora está en HTML estático con avatares, solo actualizar el texto
+    const duelo = $('#duelo');
+    if (duelo && duelo.innerHTML.includes('avatar-portrait')) {
+      // Ya tiene avatares, solo actualizar los textos
+      duelo.querySelectorAll('.duelo__nombre').forEach((el, i) => {
+        const d = i === 0 ? DATA.debatientes.urbina : DATA.debatientes.pacheco;
+        el.textContent = d.nombre;
+      });
+      duelo.querySelectorAll('.duelo__postura').forEach((el, i) => {
+        const d = i === 0 ? DATA.debatientes.urbina : DATA.debatientes.pacheco;
+        el.textContent = d.postura;
+      });
+    } else {
+      // Fallback: generar dinámicamente si no existe HTML estático
+      const { urbina, pacheco } = DATA.debatientes;
+      const lado = (d, mod) => `
+        <div class="duelo__lado duelo__lado--${mod}">
+          <span class="duelo__bando">Postura ${d.bando}</span>
+          <span class="duelo__nombre">${d.nombre}</span>
+          <span class="duelo__postura">${d.postura}</span>
+        </div>`;
+      duelo.innerHTML =
+        lado(urbina, 'urbina') +
+        '<div class="duelo__vs" aria-hidden="true">vs</div>' +
+        lado(pacheco, 'pacheco');
+    }
   }
 
   /* ─────────────────────────────────────────────────────────
@@ -57,11 +72,25 @@
           <p class="conflicto__pregunta">${c.pregunta}</p>
           <div class="conflicto__caras">
             <div class="cara cara--urbina">
-              <p class="cara__quien">${DATA.debatientes.urbina.nombre}</p>
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <img
+                  src="assets/images/urbina.jpg"
+                  alt="Dr. Dante Urbina"
+                  class="avatar-small avatar-urbina"
+                />
+                <p class="cara__quien">${DATA.debatientes.urbina.nombre}</p>
+              </div>
               <p class="cara__texto">${c.urbina}</p>
             </div>
             <div class="cara cara--pacheco">
-              <p class="cara__quien">${DATA.debatientes.pacheco.nombre}</p>
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <img
+                  src="assets/images/pacheco.jpg"
+                  alt="Sr. Edgar Pacheco"
+                  class="avatar-small avatar-pacheco"
+                />
+                <p class="cara__quien">${DATA.debatientes.pacheco.nombre}</p>
+              </div>
               <p class="cara__texto">${c.pacheco}</p>
             </div>
           </div>
@@ -441,7 +470,6 @@
     // Nota: renderArgumentos(), renderArgumentosExtendidos() y renderObjeciones() no son necesarios.
     // El contenido completo está en HTML estático en index.html (generado desde data.js con generate-static-html.js).
     // Ver CLAUDE.md para el flujo de generación.
-    renderFuentes();
 
     initNav();
     initProgressBar();
