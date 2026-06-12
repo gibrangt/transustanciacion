@@ -95,6 +95,10 @@ const DEBATE_DATA = {
       padre: 'San Ignacio de Antioquía · San Efrén el Sirio · San Agustín · San Cirilo de Alejandría · San Juan Damasceno',
       intro:
         'Si bien los padres de la Iglesia no utilizaron la palabra "transustanciación", sí se encuentra en ellos la idea fundamental de un cambio en "lo que es" el pan y el vino. Para probarlo, presenta las siguientes citas y razonamientos:',
+      respuesta_pacheco: {
+        titulo: 'Contraparte de Pacheco',
+        contenido: 'Pacheco sostiene que las afirmaciones de San Ignacio o San Ireneo sobre la Eucaristía como "carne de Cristo" no prueban la transustanciación. Para demostrarlo, cita diversas confesiones protestantes (como la Confesión Belga, la Francesa y los 39 artículos anglicanos) que usan un lenguaje casi idéntico ("comemos su cuerpo y bebemos su sangre") sin aceptar por ello la desaparición de la sustancia del pan. Según él, Urbina confunde la categoría de "presencia real" con la de "transustanciación".'
+      },
       secciones: [
         {
           titulo: 'San Ignacio de Antioquía (año 106)',
@@ -177,6 +181,10 @@ const DEBATE_DATA = {
         'Urbina explica que el Concilio de Trento formula la transustanciación basándose en que cambia la sustancia pero permanecen las especies ' +
         '(entendidas como las apariencias). Sostiene que, aunque los Padres de la Iglesia no usaron necesariamente estas palabras técnicas, ' +
         'sí tenían claras las ideas que estas implican.',
+      respuesta_pacheco: {
+        titulo: 'Contraparte de Pacheco',
+        contenido: 'Sobre el uso que hace San Cirilo de Jerusalén de la palabra metabole (transformación/cambio), Pacheco argumenta que Cirilo aplica ese mismo término al aceite del crisma. Razona que, si Urbina usa a Cirilo para probar la transustanciación del pan, tendría que aceptar también una "transustanciación del aceite", algo que la Iglesia Católica no enseña.'
+      },
       secciones: [
         {
           titulo: 'San Cirilo de Jerusalén',
@@ -232,6 +240,10 @@ const DEBATE_DATA = {
         'Dante Urbina argumenta que la doctrina de la transustanciación conlleva intrínsecamente la idea de una conversión real de los elementos, ' +
         'un concepto que la mayoría de los protestantes rechazan. Para sustentar que los Padres de la Iglesia sí creían en esta conversión, ' +
         'presenta los siguientes puntos:',
+      respuesta_pacheco: {
+        titulo: 'Contraparte de Pacheco',
+        contenido: 'Pacheco argumenta que el concepto de "cambio" en los Padres es ambiguo y no necesariamente ontológico o sustancial. Sostiene que existen cambios sacramentales, de uso, de función o de gracia que no implican la aniquilación de la naturaleza del objeto, y que Urbina comete un non sequitur al asumir que todo cambio mencionado por los Padres es de tipo aristotélico.'
+      },
       secciones: [
         {
           titulo: '1. Refutación de la postura reformada',
@@ -310,6 +322,10 @@ const DEBATE_DATA = {
         'Urbina sostiene que en los escritos de los Padres de la Iglesia se encuentran comparaciones o analogías que solo tienen sentido ' +
         'si se acepta una conversión real y total de una sustancia en otra. Según su postura, estas analogías no son compatibles con una simple ' +
         'idea genérica de "presencia real" ni con la consustanciación, sino específicamente con la transustanciación.',
+      respuesta_pacheco: {
+        titulo: 'Contraparte de Pacheco',
+        contenido: 'Pacheco responde que el concepto de "cambio" en los Padres es ambiguo y no necesariamente ontológico o sustancial. Argumenta que existen cambios sacramentales, de uso, de función o de gracia que no implican la aniquilación de la naturaleza del objeto, y que Urbina comete un non sequitur al asumir que todo cambio mencionado por los Padres es de tipo aristotélico.'
+      },
       secciones: [
         {
           titulo: 'San Ambrosio: La vara de Moisés y el río Nilo',
@@ -399,6 +415,10 @@ const DEBATE_DATA = {
         'Este argumento se basa en la premisa de que la adoración (latría) solo es debida a Dios. ' +
         'Si los Padres de la Iglesia exigían adorar los elementos eucarísticos antes de recibirlos, ' +
         'esto implica que no creían que lo que estaba allí fuera simplemente pan, sino la sustancia misma de Cristo.',
+      respuesta_pacheco: {
+        titulo: 'Contraparte de Pacheco',
+        contenido: 'Pacheco afirma que la adoración de Cristo en el sacramento solo probaría una "presencia real digna de oración", pero no la desaparición de la sustancia del pan. Señala que luteranos, anglicanos y ortodoxos pueden practicar formas de adoración o reverencia sin aceptar la metafísica romana de la transustanciación.'
+      },
       secciones: [
         {
           titulo: '1. El fundamento bíblico: El "Escabel de sus pies"',
@@ -468,6 +488,10 @@ const DEBATE_DATA = {
       intro:
         'Urbina apela a la autoridad de los grandes concilios ecuménicos de la Iglesia primitiva, argumentando que estos identificaban de forma ' +
         'directa y sustancial la Eucaristía con el Cuerpo de Cristo.',
+      respuesta_pacheco: {
+        titulo: 'Contraparte de Pacheco',
+        contenido: 'Pacheco contraargumenta que los concilios que definen la transustanciación (Letrán IV y Trento) son concilios locales occidentales y no universales como Nicea. Sostiene que si la doctrina fuera universal y clara desde Nicea, no habrían existido los debates medievales del siglo IX (como el de Ratramno de Corbie) ni la oposición de otras iglesias antiguas.'
+      },
       secciones: [
         {
           titulo: 'Concilio de Nicea (318 obispos)',
@@ -517,6 +541,10 @@ const DEBATE_DATA = {
         'sino aumentar la probabilidad de la postura católica y reducir la de la postura evangélica al citar a grandes pensadores del propio campo protestante. ' +
         'Urbina utiliza este argumento para refutar la afirmación de Edgar Pacheco de que "no vas a encontrar la transustanciación en los padres ' +
         'de la Iglesia en ninguno, ni uno solo".',
+      respuesta_pacheco: {
+        titulo: 'Contraparte de Pacheco',
+        contenido: 'Pacheco utiliza al mismo historiador citado por Urbina, Philip Schaff, para señalar que es difícil atribuirle a San Ireneo la doctrina de la transustanciación, ya que Ireneo habla de "dos realidades" (una terrenal y otra celestial) en el pan. Además, desestima las citas de William Lane Craig o Leibniz como irrelevantes para determinar qué escribieron realmente los Padres.'
+      },
       secciones: [
         {
           titulo: 'William Lane Craig: La transustanciación plenamente desarrollada',
@@ -562,6 +590,10 @@ const DEBATE_DATA = {
       intro:
         'Este argumento, al igual que el anterior, es de carácter inductivo y busca demostrar que expertos de la propia tradición protestante ' +
         'contradicen la tesis de Edgar Pacheco sobre la ausencia de la transustanciación en la Iglesia primitiva.',
+      respuesta_pacheco: {
+        titulo: 'Contraparte de Pacheco',
+        contenido: 'Pacheco utiliza al mismo historiador citado por Urbina, Philip Schaff, para señalar que es difícil atribuirle a San Ireneo la doctrina de la transustanciación, ya que Ireneo habla de "dos realidades" (una terrenal y otra celestial) en el pan. Además, desestima las citas de William Lane Craig o Leibniz como irrelevantes para determinar qué escribieron realmente los Padres.'
+      },
       secciones: [
         {
           titulo: '1. La premisa de Pacheco que debe ser refutada',
@@ -611,6 +643,10 @@ const DEBATE_DATA = {
       intro:
         'Urbina utiliza este último argumento para contrastar lo que él considera la claridad de la doctrina católica frente a la fragmentación ' +
         'de las posturas protestantes. Su tesis es que los críticos de la transustanciación no tienen una alternativa coherente que ofrecer.',
+      respuesta_pacheco: {
+        titulo: 'Contraparte de Pacheco',
+        contenido: 'Pacheco califica este argumento como una falacia de "envenenar el pozo". Sostiene que lo que crean los protestantes modernos o sus compañeros de bloque es irrelevante para la tesis histórica del debate: "¿enseñaron los Padres de la Iglesia la transustanciación?"'
+      },
       secciones: [
         {
           titulo: '1. Unidad en la negación, división en la afirmación',

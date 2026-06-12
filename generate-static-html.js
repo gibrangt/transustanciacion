@@ -65,6 +65,13 @@ function generateArgumentoHTML(a) {
     ? ''
     : `<p class="arg-card__conclusion"><b>Conclusión del argumento</b>${a.conclusion}</p>`;
 
+  const respuesta = a.respuesta_pacheco && !isEmpty(a.respuesta_pacheco.contenido)
+    ? `<div class="arg-card__respuesta">
+        <h4 class="arg-card__respuesta-titulo">${a.respuesta_pacheco.titulo}</h4>
+        <p class="arg-card__respuesta-contenido">${a.respuesta_pacheco.contenido}</p>
+      </div>`
+    : '';
+
   const fuente = isEmpty(a.link)
     ? isEmpty(a.fuente)
       ? `<span class="fuente-tag fuente-tag--pendiente"><i class="ti ti-link" aria-hidden="true"></i>Fuente por añadir</span>`
@@ -88,6 +95,7 @@ function generateArgumentoHTML(a) {
         ${isEmpty(a.intro) ? '' : `<p class="arg-card__intro">${a.intro}</p>`}
         ${contenido}
         ${conclusion}
+        ${respuesta}
         ${fuente ? `<div class="arg-card__footer">${fuente}</div>` : ''}
       </div>
     </details>`;
