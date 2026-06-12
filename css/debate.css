@@ -428,13 +428,11 @@
 }
 .cara--pacheco .cara__quien { color: var(--color-pacheco); }
 
-/* Estado de reveal por scroll (GSAP añade .is-in) con fallback CSS */
+/* Conflictos visibles por defecto (sin JavaScript) */
 .conflicto {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s cubic-bezier(0.22,1,0.36,1), transform 0.8s cubic-bezier(0.22,1,0.36,1);
+  opacity: 1;
+  transform: none;
 }
-.conflicto.is-in { opacity: 1; transform: none; }
 
 @media (max-width: 700px) {
   .conflicto { grid-template-columns: 1fr; gap: var(--space-sm); }
