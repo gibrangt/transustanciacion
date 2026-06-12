@@ -62,7 +62,7 @@
         <h1 class="hero__title">
           La <em>Transustanciación</em><br />en los Padres de la Iglesia
         </h1>
-        <p class="hero__subtitle" id="hero-subtitle"></p>
+        <p class="hero__subtitle">¿Hay evidencia patrística del cambio de sustancia?</p>
 
         <!-- Dialéctica de los dos debatientes con avatares -->
         <div class="duelo" id="duelo">
@@ -95,7 +95,7 @@
           </div>
         </div>
 
-        <p class="hero__tesis" id="hero-tesis"></p>
+        <p class="hero__tesis">Examinando ambas posturas con fidelidad, los argumentos del Dr. Urbina resultan mejor sustentados.</p>
 
         <a href="#contexto" class="hero__scroll" aria-label="Desplázate para comenzar">
           <span>Comenzar</span>
@@ -162,8 +162,78 @@
         </p>
       </div>
 
-      <div class="conflictos__list" id="conflictos-list">
-        <!-- inyectado por app.js -->
+      <div class="conflictos__list">
+        <article class="conflicto">
+          <div class="conflicto__index" aria-hidden="true">01</div>
+          <div class="conflicto__body">
+            <h3 class="conflicto__titulo">La definición de «consenso»</h3>
+            <p class="conflicto__pregunta">¿Qué hace falta para hablar de un consenso de los Padres?</p>
+            <div class="conflicto__caras">
+              <div class="cara cara--urbina">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                  <img src="assets/images/urbina.jpg" alt="Dr. Dante Urbina" class="avatar-small avatar-urbina" />
+                  <p class="cara__quien">Dr. Dante Urbina</p>
+                </div>
+                <p class="cara__texto">Apela a un consenso moral: basta un número suficiente de citas convergentes para inferir legítimamente que la doctrina ya se profesaba.</p>
+              </div>
+              <div class="cara cara--pacheco">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                  <img src="assets/images/pacheco.jpg" alt="Sr. Edgar Pacheco" class="avatar-small avatar-pacheco" />
+                  <p class="cara__quien">Sr. Edgar Pacheco</p>
+                </div>
+                <p class="cara__texto">Exige un consenso unánime y explícito, según los propios criterios del catolicismo (el canon de San Vicente de Lerins: lo creído «en todas partes, siempre y por todos»).</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="conflicto">
+          <div class="conflicto__index" aria-hidden="true">02</div>
+          <div class="conflicto__body">
+            <h3 class="conflicto__titulo">La interpretación de los términos</h3>
+            <p class="conflicto__pregunta">¿Qué significaban realmente las palabras de los Padres?</p>
+            <div class="conflicto__caras">
+              <div class="cara cara--urbina">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                  <img src="assets/images/urbina.jpg" alt="Dr. Dante Urbina" class="avatar-small avatar-urbina" />
+                  <p class="cara__quien">Dr. Dante Urbina</p>
+                </div>
+                <p class="cara__texto">Términos griegos y latinos como metabolé y conversio implican una conversión real, un cambio en lo que el objeto es —es decir, en su sustancia.</p>
+              </div>
+              <div class="cara cara--pacheco">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                  <img src="assets/images/pacheco.jpg" alt="Sr. Edgar Pacheco" class="avatar-small avatar-pacheco" />
+                  <p class="cara__quien">Sr. Edgar Pacheco</p>
+                </div>
+                <p class="cara__texto">Esos mismos términos pueden denotar un cambio sacramental o de uso, no necesariamente un cambio de sustancia en sentido aristotélico.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="conflicto">
+          <div class="conflicto__index" aria-hidden="true">03</div>
+          <div class="conflicto__body">
+            <h3 class="conflicto__titulo">Desarrollo doctrinal vs. innovación</h3>
+            <p class="conflicto__pregunta">¿Es la transustanciación un desarrollo de la fe o un cambio de ella?</p>
+            <div class="conflicto__caras">
+              <div class="cara cara--urbina">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                  <img src="assets/images/urbina.jpg" alt="Dr. Dante Urbina" class="avatar-small avatar-urbina" />
+                  <p class="cara__quien">Dr. Dante Urbina</p>
+                </div>
+                <p class="cara__texto">La doctrina se aclara y precisa con el tiempo, igual que ocurrió con el dogma de la Trinidad: el lenguaje madura, pero la fe es la misma.</p>
+              </div>
+              <div class="cara cara--pacheco">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                  <img src="assets/images/pacheco.jpg" alt="Sr. Edgar Pacheco" class="avatar-small avatar-pacheco" />
+                  <p class="cara__quien">Sr. Edgar Pacheco</p>
+                </div>
+                <p class="cara__texto">La transustanciación es un cambio sustancial respecto de la fe original, no un simple desarrollo: introduce categorías ausentes en la Iglesia antigua.</p>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -1034,8 +1104,5 @@
     </p>
   </footer>
 
-  <!-- Datos e interactividad mínima (sin GSAP, sin jQuery, sin frameworks) -->
-  <script src="js/data.js"></script>
-  <script src="js/app.js"></script>
 </body>
 </html>
