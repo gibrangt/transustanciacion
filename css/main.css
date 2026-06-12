@@ -282,7 +282,10 @@ section {
   }
   .site-nav__links {
     position: fixed;
-    inset: var(--nav-h) 0 auto 0;
+    top: var(--nav-h);
+    right: 0;
+    left: 0;
+    bottom: auto;
     flex-direction: column;
     gap: 0;
     background: var(--color-bg);
@@ -294,13 +297,16 @@ section {
     z-index: 999;
     max-height: 70vh;
     overflow-y: auto;
+    visibility: hidden;
   }
   /* Mostrar menú cuando checkbox está marcado */
   .site-nav__checkbox:checked ~ .site-nav__links {
     transform: translateY(0);
+    visibility: visible;
   }
   .site-nav__links a {
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 0.75rem clamp(1.25rem, 5vw, 4rem);
     font-size: var(--step--1);
     border-bottom: 1px solid var(--color-line);
@@ -308,8 +314,6 @@ section {
     text-decoration: none;
     transition: background-color 0.2s ease;
     min-height: 40px;
-    display: flex;
-    align-items: center;
   }
   .site-nav__links a:active,
   .site-nav__links a:hover {
