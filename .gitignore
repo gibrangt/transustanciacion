@@ -3,3 +3,5 @@
 skills-lock.json
 *.Zone.Identifier
 CLAUDE.md
+*.bak
+*:Zone.Identifier
