@@ -593,6 +593,11 @@
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lift);
   overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.arg-card[open] {
+  box-shadow: var(--shadow-lift);
 }
 .arg-card__summary {
   display: flex;
@@ -776,6 +781,11 @@
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lift);
   overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.objecion-card[open] {
+  box-shadow: var(--shadow-lift);
 }
 .objecion-card__summary {
   display: flex;
