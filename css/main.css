@@ -271,8 +271,13 @@ section {
 
 /* ── Responsive nav ── */
 @media (max-width: 768px) {
+  .site-nav__checkbox {
+    display: none;
+  }
   .site-nav__toggle {
     display: block;
+    padding: 0.5rem;
+    margin: -0.5rem;
   }
   .site-nav__links {
     position: fixed;
@@ -281,22 +286,46 @@ section {
     gap: 0;
     background: var(--color-bg);
     border-bottom: 1px solid var(--color-line);
-    padding: var(--space-sm) clamp(1.25rem, 5vw, 4rem) var(--space-md);
-    transform: translateY(-120%);
+    padding: 0;
+    transform: translateY(-100%);
     transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
     box-shadow: var(--shadow-soft);
-    max-height: 0;
-    overflow: hidden;
+    z-index: 999;
+    max-height: calc(100vh - var(--nav-h));
+    overflow-y: auto;
   }
   /* Mostrar menú cuando checkbox está marcado */
   .site-nav__checkbox:checked ~ .site-nav__links {
     transform: translateY(0);
-    max-height: 100vh;
   }
   .site-nav__links a {
-    padding-block: 0.85rem;
+    display: block;
+    padding: 1rem clamp(1.25rem, 5vw, 4rem);
     font-size: var(--step-0);
     border-bottom: 1px solid var(--color-line);
+    color: var(--color-text);
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  .site-nav__links a:active,
+  .site-nav__links a:hover {
+    background-color: var(--color-urbina-light);
+    color: var(--color-urbina);
+  }
+  /* Overlay para cerrar el menú haciendo click fuera */
+  .site-nav__overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: transparent;
+    cursor: pointer;
+    z-index: 998;
+  }
+  .site-nav__checkbox:checked ~ .site-nav__overlay {
+    display: block;
   }
 }
 
