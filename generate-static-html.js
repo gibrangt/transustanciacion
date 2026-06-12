@@ -119,6 +119,13 @@ function generateObjecionHTML(o) {
     contenido = `<p class="objecion-card__descripcion">${o.descripcion}</p>`;
   }
 
+  const respuesta = o.respuesta_catolica && !isEmpty(o.respuesta_catolica.contenido)
+    ? `<div class="objecion-card__respuesta">
+        <h4 class="objecion-card__respuesta-titulo">${o.respuesta_catolica.titulo}</h4>
+        <p class="objecion-card__respuesta-contenido">${o.respuesta_catolica.contenido}</p>
+      </div>`
+    : '';
+
   const fuente = isEmpty(o.link)
     ? isEmpty(o.fuente)
       ? `<span class="fuente-tag fuente-tag--pendiente"><i class="ti ti-link" aria-hidden="true"></i>Fuente por añadir</span>`
@@ -141,6 +148,7 @@ function generateObjecionHTML(o) {
       <div class="objecion-card__body">
         ${isEmpty(o.intro) ? '' : `<p class="objecion-card__intro">${o.intro}</p>`}
         ${contenido}
+        ${respuesta}
         ${fuente ? `<div class="objecion-card__footer">${fuente}</div>` : ''}
       </div>
     </details>`;

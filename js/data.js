@@ -696,6 +696,14 @@ const DEBATE_DATA = {
       descripcion:
         'Argumenta que Dante Urbina no debe probar solo una "presencia real" o lenguaje reverente, sino la doctrina ' +
         'específica de la conversión ontológica donde desaparece la sustancia del pan.',
+      respuesta_catolica: {
+        titulo: 'Respuesta de Urbina',
+        contenido:
+          'Urbina responde que Pacheco también tiene una "pesada carga de la prueba" al haber afirmado de forma tajante ' +
+          'que la doctrina no se encuentra en "ni un solo" padre. Respecto al consenso, sostiene que en teología no se requiere ' +
+          'un consenso "matemático" de cada individuo, sino un **consenso moral**, citando al erudito protestante Leibniz, quien afirma ' +
+          'que los antiguos reconocieron "universalmente" un cambio de sustancia.'
+      },
       fuente: '',
       link: ''
     },
@@ -710,6 +718,13 @@ const DEBATE_DATA = {
       descripcion:
         'Esto, según él, invalida cualquier pretensión de unanimidad patrística. Si más de 30 Padres guardaban silencio ' +
         'o no abordaban el tema con la precisión que Urbina exige, entonces no puede hablarse de un consenso ecuménico.',
+      respuesta_catolica: {
+        titulo: 'Respuesta de Urbina',
+        contenido:
+          'Urbina califica esta objeción como una **"gigantesca falacia de argumento desde el silencio"**. Argumenta que el hecho ' +
+          'de que algunos padres no trataran el tema o sus escritos se hayan perdido no anula la evidencia positiva y explícita de aquellos ' +
+          'que sí hablaron claramente de un cambio sustancial.'
+      },
       fuente: '',
       link: ''
     },
@@ -724,6 +739,14 @@ const DEBATE_DATA = {
       descripcion:
         'Sostiene que Roma lee "presencia real" e inmediatamente asume que es "transustanciación", lo cual considera una definición paupérrima de categorías. ' +
         'Los Padres no pensaban en términos de aristotelismo; proyectar esa filosofía sobre ellos es anacrónico.',
+      respuesta_catolica: {
+        titulo: 'Respuesta de Urbina',
+        contenido:
+          'Urbina aclara que la doctrina no depende del sistema de Aristóteles. Cita a **San Agustín**, quien, bajo una influencia neoplatónica, ' +
+          'ya distinguía entre lo que se ve (apariencia) y lo que la cosa es (sustancia). Además, corrige una cita de Pacheco sobre el teólogo ' +
+          'Schillebeeckx, señalando que este afirma que la **"intuición patrística básica"** era la misma que el dogma de Trento, independientemente ' +
+          'del lenguaje filosófico usado.'
+      },
       fuente: '',
       link: ''
     },
@@ -739,6 +762,14 @@ const DEBATE_DATA = {
         'Argumenta que si un obispo de Roma pudo sostener la permanencia de la sustancia sin ser considerado hereje, ' +
         'la transustanciación no podía ser una creencia universal en el siglo V. Un Papa del siglo V rechazando implícitamente ' +
         'la transustanciación es una prueba contundente en su contra.',
+      respuesta_catolica: {
+        titulo: 'Respuesta de Urbina',
+        contenido:
+          'Urbina presenta dos defensas: primero, sostiene que la autoría de la obra atribuida a Gelasio es **"altamente disputada" o espuria** ' +
+          'según expertos como Jesús Solano y D.A. Carson. Segundo, explica que en el lenguaje neoplatónico de la época, la palabra "sustancia" ' +
+          'podía usarse para referirse a la naturaleza material o visible (lo que hoy llamamos especies), por lo que decir que la sustancia permanece ' +
+          'no contradice necesariamente que haya un cambio ontológico profundo.'
+      },
       fuente: '',
       link: ''
     },
@@ -753,6 +784,13 @@ const DEBATE_DATA = {
       descripcion:
         'El hecho de que los Padres usen lenguaje realista no significa que creyeran en la doctrina específica de Trento. ' +
         'Podrían haber creído en presencia real de otros modos, sin que eso equivalga a transustanciación.',
+      respuesta_catolica: {
+        titulo: 'Respuesta de Urbina',
+        contenido:
+          'Urbina argumenta que sus pruebas no se limitan a una "presencia real genérica", sino que demuestran específicamente la transustanciación ' +
+          'porque los padres hablan de una **conversión** donde el pan "pasa a ser" o "ya no es" pan. Esto excluye la consubstanciación (donde el pan ' +
+          'permanece) y el simbolismo.'
+      },
       fuente: '',
       link: ''
     },
@@ -767,6 +805,13 @@ const DEBATE_DATA = {
       descripcion:
         'Si la transustanciación hubiera sido la lectura clara y evidente de los padres antiguos, tales debates habrían sido innecesarios. ' +
         'La existencia de estas controversias demuestra que la tradición patrística permitía interpretaciones diversas.',
+      respuesta_catolica: {
+        titulo: 'Respuesta de Urbina',
+        contenido:
+          'Urbina afirma que estos debates eran sobre **terminología y modo de expresión**, no sobre el fondo de la doctrina. Cita al propio Ratramno ' +
+          '(supuesto opositor) diciendo que los elementos "no son la misma cosa que eran antes" y han "experimentado cambio", lo cual cumple con la ' +
+          'definición básica de transustanciación: un cambio en lo que la cosa es.'
+      },
       fuente: '',
       link: ''
     },
@@ -781,6 +826,13 @@ const DEBATE_DATA = {
       descripcion:
         'El método es vicioso: presuponenla conclusión que quieren probar. Esto invalida todo el edificio argumentativo de Urbina, ' +
         'pues se basa en una interpretación forzada de los Padres para hacerlos encajar en categorías medievales.',
+      respuesta_catolica: {
+        titulo: 'Respuesta de Urbina',
+        contenido:
+          'Urbina rechaza que esté imponiendo una lectura romana. Para evitar la circularidad, utiliza definiciones de "sustancia" de fuentes neutrales ' +
+          '(como diccionarios de filosofía) y apela al testimonio de **historiadores y filósofos protestantes** (como Philip Schaff y William Lane Craig), ' +
+          'quienes reconocen que los padres enseñaban un cambio de sustancia o una doctrina plenamente desarrollada.'
+      },
       fuente: '',
       link: ''
     }
