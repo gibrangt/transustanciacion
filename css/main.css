@@ -301,13 +301,13 @@ section {
   }
   .site-nav__links a {
     display: block;
-    padding: 1rem clamp(1.25rem, 5vw, 4rem);
-    font-size: var(--step-0);
+    padding: 0.75rem clamp(1.25rem, 5vw, 4rem);
+    font-size: var(--step--1);
     border-bottom: 1px solid var(--color-line);
     color: var(--color-text);
     text-decoration: none;
     transition: background-color 0.2s ease;
-    min-height: 44px;
+    min-height: 40px;
     display: flex;
     align-items: center;
   }
