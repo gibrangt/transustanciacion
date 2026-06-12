@@ -518,6 +518,33 @@
   text-transform: uppercase;
   margin-bottom: 0.25rem;
 }
+
+/* Contrapartes de Pacheco en los argumentos de Urbina */
+.arg-card__respuesta {
+  background: linear-gradient(160deg, rgba(122, 46, 46, 0.06), var(--color-pacheco-light));
+  border: 1px solid rgba(122, 46, 46, 0.2);
+  border-left: 3px solid var(--color-pacheco);
+  border-radius: var(--radius);
+  padding: 0.8rem 1rem;
+  margin-top: 0.5rem;
+}
+.arg-card__respuesta-titulo {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-pacheco);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.arg-card__respuesta-contenido {
+  font-size: var(--step-0);
+  color: var(--color-text);
+  line-height: 1.55;
+  margin: 0;
+}
+
 .arg-card__footer {
   margin-top: 0.25rem;
   padding-top: var(--space-sm);
@@ -642,6 +669,33 @@
   line-height: 1.55;
 }
 .objecion-card__punto-label { font-weight: 700; color: var(--color-pacheco-deep); }
+
+/* Respuestas de Urbina en las objeciones de Pacheco */
+.objecion-card__respuesta {
+  background: linear-gradient(160deg, rgba(27, 79, 138, 0.06), var(--color-urbina-light));
+  border: 1px solid rgba(27, 79, 138, 0.2);
+  border-left: 3px solid var(--color-urbina);
+  border-radius: var(--radius);
+  padding: 0.8rem 1rem;
+  margin-top: 0.5rem;
+}
+.objecion-card__respuesta-titulo {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-urbina);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.objecion-card__respuesta-contenido {
+  font-size: var(--step-0);
+  color: var(--color-text);
+  line-height: 1.55;
+  margin: 0;
+}
+
 .objecion-card__footer {
   margin-top: 0.25rem;
   padding-top: var(--space-sm);
