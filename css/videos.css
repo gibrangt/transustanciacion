@@ -1,0 +1,231 @@
+/* ============================================================================
+   videos.css — Estilos para la sección 7: Videos del Debate
+   ========================================================================== */
+
+.videos-section {
+  padding: var(--space-lg) 0;
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-line);
+}
+
+.videos-section > .container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.videos-section h2 {
+  font-family: var(--font-display);
+  font-size: var(--step-3);
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+  font-weight: 600;
+}
+
+.videos-section .kicker {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+/* ── Video del Debate (Protagonista) ── */
+.video-debate {
+  max-width: var(--container-narrow);
+  margin: 0 auto var(--space-2xl);
+  text-align: center;
+}
+
+.video-debate .video-thumbnail-link {
+  display: block;
+  margin-bottom: var(--space-md);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+}
+
+.video-debate .video-thumbnail-link:hover {
+  box-shadow: var(--shadow-lift);
+  transform: scale(1.02);
+}
+
+.video-debate .video-thumbnail {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.video-debate .video-title {
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  color: var(--color-text);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* ── Grupos Colapsables ── */
+.video-groups {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.video-group {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  background: white;
+}
+
+.video-group__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  font-weight: 600;
+  padding: var(--space-sm) 0;
+  border-bottom: 2px solid currentColor;
+  user-select: none;
+  transition: all 0.2s ease;
+  list-style: none;
+}
+
+.video-group__header:hover {
+  opacity: 0.8;
+}
+
+/* Color-coding por grupo */
+.video-group--urbina .video-group__header {
+  color: var(--color-urbina);
+  border-color: var(--color-urbina-light);
+}
+
+.video-group--pacheco .video-group__header {
+  color: var(--color-pacheco);
+  border-color: var(--color-pacheco-light);
+}
+
+.video-group--terceros .video-group__header {
+  color: var(--color-terceros);
+}
+
+.video-group__icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-size: 0.9em;
+  flex-shrink: 0;
+}
+
+/* Rotación del icono en open/closed state */
+details[open] .video-group__icon {
+  transform: rotate(0deg);
+}
+
+details:not([open]) .video-group__icon {
+  transform: rotate(-90deg);
+}
+
+/* Animación de contenido al abrir */
+.video-grid {
+  padding-top: var(--space-md);
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 9999px;
+  }
+}
+
+/* ── Grid de Miniaturas ── */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-md);
+}
+
+/* Responsive: 3 cols → 2 → 1 */
+@media (min-width: 900px) {
+  .video-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Miniatura Individual ── */
+.video-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.video-item .video-thumbnail-link {
+  display: block;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.video-item .video-thumbnail-link:hover {
+  box-shadow: var(--shadow-lift);
+  transform: scale(1.02);
+}
+
+.video-item .video-thumbnail {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.video-item__title {
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.video-item:hover .video-item__title {
+  color: var(--color-text);
+}
+
+/* Accesibilidad: respeto a prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .video-debate .video-thumbnail-link,
+  .video-item .video-thumbnail-link,
+  .video-group__header,
+  .video-group__icon {
+    transition: none;
+  }
+
+  .video-grid {
+    animation: none;
+  }
+}
