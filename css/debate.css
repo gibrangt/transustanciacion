@@ -1079,3 +1079,33 @@
     padding: var(--space-md);
   }
 }
+
+/* ╔══════════════════════════════════════════════════════════╗
+   ║ 8 · BIBLIOTECA                                            ║
+   ╚══════════════════════════════════════════════════════════╝ */
+
+.biblioteca {
+  background-color: var(--color-bg);
+  padding: var(--space-lg) var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .biblioteca {
+    padding: var(--space-2xl) var(--space-lg);
+  }
+}
+
+.biblioteca__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  max-width: var(--container);
+  margin: var(--space-lg) auto 0;
+}
+
+@media (min-width: 768px) {
+  .biblioteca__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+}
