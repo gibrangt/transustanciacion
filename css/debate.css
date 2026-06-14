@@ -1095,6 +1095,15 @@
   }
 }
 
+.biblioteca__subtitle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--step-1);
+  color: var(--color-text);
+  margin: var(--space-lg) 0 var(--space-md) 0;
+  line-height: 1.2;
+}
+
 .biblioteca__grid {
   display: grid;
   grid-template-columns: 1fr;
