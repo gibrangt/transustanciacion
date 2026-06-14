@@ -1125,12 +1125,14 @@
 
 .libro-card__portada {
   width: 100%;
+  max-width: 160px;
   aspect-ratio: 3 / 4;
   object-fit: cover;
   border-radius: var(--radius-lg);
   display: block;
   box-shadow: 0 2px 8px rgba(26, 24, 20, 0.1);
   transition: filter 0.25s ease, transform 0.25s ease;
+  margin: 0 auto;
 }
 
 .libro-card__titulo {
