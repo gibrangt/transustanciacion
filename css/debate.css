@@ -235,7 +235,7 @@
 .duelo__lado--pacheco { background: var(--color-pacheco-light); }
 .duelo__bando {
   font-family: var(--font-mono);
-  font-size: var(--step--2);
+  font-size: var(--step--1);
   letter-spacing: 0.16em;
   text-transform: uppercase;
   margin: 0;
@@ -249,7 +249,7 @@
   margin: 0;
 }
 .duelo__postura {
-  font-size: var(--step--2);
+  font-size: var(--step--1);
   color: var(--color-text-muted);
   line-height: 1.5;
   max-width: 20ch;
@@ -321,7 +321,7 @@
   gap: var(--space-md);
 }
 .prose-card {
-  background: #fff;
+  background: var(--color-surface);
   border: 1px solid var(--color-line);
   border-radius: var(--radius-lg);
   padding: var(--space-md);
@@ -471,7 +471,7 @@
   align-items: center;
   gap: 0.5rem;
   padding: var(--space-sm);
-  background: linear-gradient(160deg, #fff, var(--color-urbina-light));
+  background: linear-gradient(160deg, var(--color-surface), var(--color-urbina-light));
   border: 1px solid var(--color-line);
   border-left: 4px solid var(--color-urbina);
   border-radius: var(--radius-lg);
@@ -531,7 +531,7 @@
 .argumentos:has(#arg-9:target)  a[href="#arg-9"],
 .argumentos:has(#arg-10:target) a[href="#arg-10"] {
   border-left-color: var(--color-accent);
-  background: linear-gradient(160deg, #fff, rgba(196, 146, 42, 0.12));
+  background: linear-gradient(160deg, var(--color-surface), rgba(196, 146, 42, 0.12));
   box-shadow: var(--shadow-lift);
 }
 
@@ -566,7 +566,7 @@
 
 /* Tile de objeción (mismo patrón que arg-tile, color pacheco) */
 .objeciones-grid .arg-tile {
-  background: linear-gradient(160deg, #fff, var(--color-pacheco-light));
+  background: linear-gradient(160deg, var(--color-surface), var(--color-pacheco-light));
   border-left-color: var(--color-pacheco);
 }
 
@@ -589,7 +589,7 @@
 .objeciones:has(#obj-6:target) a[href="#obj-6"],
 .objeciones:has(#obj-7:target) a[href="#obj-7"] {
   border-left-color: var(--color-accent);
-  background: linear-gradient(160deg, #fff, rgba(196, 146, 42, 0.12));
+  background: linear-gradient(160deg, var(--color-surface), rgba(196, 146, 42, 0.12));
   box-shadow: var(--shadow-lift);
 }
 
@@ -718,7 +718,7 @@
 
 /* Variante Urbina (sección 4) */
 .detalle--urbina .detalle__inner {
-  background: linear-gradient(180deg, #fff 0%, var(--color-urbina-light) 100%);
+  background: linear-gradient(180deg, var(--color-surface) 0%, var(--color-urbina-light) 100%);
 }
 
 .detalle--urbina .detalle__header {
@@ -742,7 +742,7 @@
 
 /* Variante Pacheco (sección 5) */
 .detalle--pacheco .detalle__inner {
-  background: linear-gradient(180deg, #fff 0%, var(--color-pacheco-light) 100%);
+  background: linear-gradient(180deg, var(--color-surface) 0%, var(--color-pacheco-light) 100%);
 }
 
 .detalle--pacheco .detalle__header {
@@ -973,7 +973,7 @@
   color: var(--color-text);
   line-height: 1.7;
   padding: var(--space-md);
-  background: #fff;
+  background: var(--color-surface);
   border-left: 4px solid var(--color-accent);
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
@@ -981,7 +981,7 @@
 
 /* Tarjetas expandibles de conclusión */
 .conclusion-item {
-  background: linear-gradient(160deg, #fff, rgba(196, 146, 42, 0.05));
+  background: linear-gradient(160deg, var(--color-surface), rgba(196, 146, 42, 0.05));
   border: 1px solid var(--color-line);
   border-left: 4px solid var(--color-accent);
   border-radius: var(--radius-lg);
@@ -1183,6 +1183,12 @@
   font-size: var(--step--1);
   color: var(--color-text-muted);
   margin: 0;
+}
+
+/* ── Documentos de la Iglesia: portrait photos need square ratio ── */
+.libro-card--documento .libro-card__portada {
+  aspect-ratio: 1 / 1;
+  object-position: center top;
 }
 
 /* ╔══════════════════════════════════════════════════════════╗

@@ -5,3 +5,5 @@ skills-lock.json
 CLAUDE.md
 *.bak
 *:Zone.Identifier
+node_modules/
+package-lock.json

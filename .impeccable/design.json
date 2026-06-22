@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-22T00:00:00.000Z",
+  "title": "Design System: La Transustanciación en los Padres de la Iglesia",
+  "extensions": {
+    "colorMeta": {
+      "ancient-parchment": {
+        "role": "neutral",
+        "displayName": "Ancient Parchment",
+        "canonical": "oklch(97% 0.007 85)",
+        "tonalRamp": ["oklch(55% 0.015 85)", "oklch(65% 0.013 85)", "oklch(75% 0.012 85)", "oklch(83% 0.011 85)", "oklch(89% 0.010 85)", "oklch(92% 0.009 85)", "oklch(95% 0.008 85)", "oklch(97% 0.007 85)"]
+      },
+      "parchment-deep": {
+        "role": "neutral",
+        "displayName": "Parchment Deep",
+        "canonical": "oklch(89% 0.010 85)",
+        "tonalRamp": ["oklch(55% 0.015 85)", "oklch(65% 0.013 85)", "oklch(72% 0.012 85)", "oklch(80% 0.011 85)", "oklch(86% 0.010 85)", "oklch(89% 0.010 85)", "oklch(93% 0.009 85)", "oklch(97% 0.007 85)"]
+      },
+      "ecclesial-navy": {
+        "role": "primary",
+        "displayName": "Ecclesial Navy",
+        "canonical": "oklch(38% 0.11 254)",
+        "tonalRamp": ["oklch(15% 0.07 254)", "oklch(22% 0.09 254)", "oklch(30% 0.10 254)", "oklch(38% 0.11 254)", "oklch(50% 0.10 254)", "oklch(62% 0.09 254)", "oklch(78% 0.06 254)", "oklch(91% 0.025 254)"]
+      },
+      "ecclesial-navy-light": {
+        "role": "primary",
+        "displayName": "Ecclesial Navy Light",
+        "canonical": "oklch(91% 0.025 254)",
+        "tonalRamp": ["oklch(38% 0.11 254)", "oklch(50% 0.10 254)", "oklch(62% 0.09 254)", "oklch(72% 0.07 254)", "oklch(80% 0.05 254)", "oklch(86% 0.035 254)", "oklch(91% 0.025 254)", "oklch(96% 0.012 254)"]
+      },
+      "ecclesial-navy-deep": {
+        "role": "primary",
+        "displayName": "Ecclesial Navy Deep",
+        "canonical": "oklch(30% 0.10 254)",
+        "tonalRamp": ["oklch(10% 0.06 254)", "oklch(18% 0.08 254)", "oklch(25% 0.09 254)", "oklch(30% 0.10 254)", "oklch(38% 0.11 254)", "oklch(50% 0.10 254)", "oklch(65% 0.08 254)", "oklch(82% 0.045 254)"]
+      },
+      "argument-crimson": {
+        "role": "secondary",
+        "displayName": "Argument Crimson",
+        "canonical": "oklch(37% 0.10 22)",
+        "tonalRamp": ["oklch(15% 0.07 22)", "oklch(22% 0.09 22)", "oklch(30% 0.10 22)", "oklch(37% 0.10 22)", "oklch(49% 0.09 22)", "oklch(62% 0.08 22)", "oklch(77% 0.05 22)", "oklch(92% 0.018 22)"]
+      },
+      "argument-crimson-light": {
+        "role": "secondary",
+        "displayName": "Argument Crimson Light",
+        "canonical": "oklch(92% 0.018 22)",
+        "tonalRamp": ["oklch(37% 0.10 22)", "oklch(50% 0.09 22)", "oklch(62% 0.08 22)", "oklch(72% 0.06 22)", "oklch(80% 0.04 22)", "oklch(86% 0.03 22)", "oklch(92% 0.018 22)", "oklch(97% 0.008 22)"]
+      },
+      "argument-crimson-deep": {
+        "role": "secondary",
+        "displayName": "Argument Crimson Deep",
+        "canonical": "oklch(29% 0.09 22)",
+        "tonalRamp": ["oklch(10% 0.06 22)", "oklch(18% 0.08 22)", "oklch(24% 0.09 22)", "oklch(29% 0.09 22)", "oklch(37% 0.10 22)", "oklch(50% 0.09 22)", "oklch(65% 0.07 22)", "oklch(83% 0.04 22)"]
+      },
+      "gospel-gold": {
+        "role": "tertiary",
+        "displayName": "Gospel Gold",
+        "canonical": "oklch(65% 0.13 67)",
+        "tonalRamp": ["oklch(20% 0.09 67)", "oklch(32% 0.11 67)", "oklch(45% 0.12 67)", "oklch(58% 0.13 67)", "oklch(65% 0.13 67)", "oklch(74% 0.11 67)", "oklch(84% 0.08 67)", "oklch(95% 0.03 67)"]
+      },
+      "gospel-gold-deep": {
+        "role": "tertiary",
+        "displayName": "Gospel Gold Deep",
+        "canonical": "oklch(56% 0.12 67)",
+        "tonalRamp": ["oklch(18% 0.08 67)", "oklch(28% 0.10 67)", "oklch(38% 0.11 67)", "oklch(48% 0.12 67)", "oklch(56% 0.12 67)", "oklch(65% 0.13 67)", "oklch(78% 0.10 67)", "oklch(92% 0.04 67)"]
+      },
+      "manuscript-ink": {
+        "role": "neutral",
+        "displayName": "Manuscript Ink",
+        "canonical": "oklch(12% 0.007 75)",
+        "tonalRamp": ["oklch(12% 0.007 75)", "oklch(22% 0.008 75)", "oklch(35% 0.009 75)", "oklch(45% 0.010 75)", "oklch(57% 0.009 75)", "oklch(70% 0.008 75)", "oklch(82% 0.007 75)", "oklch(93% 0.005 75)"]
+      },
+      "muted-ink": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "oklch(45% 0.010 75)",
+        "tonalRamp": ["oklch(12% 0.007 75)", "oklch(22% 0.008 75)", "oklch(35% 0.009 75)", "oklch(45% 0.010 75)", "oklch(57% 0.009 75)", "oklch(70% 0.008 75)", "oklch(82% 0.007 75)", "oklch(93% 0.005 75)"]
+      },
+      "margin-rule": {
+        "role": "neutral",
+        "displayName": "Margin Rule",
+        "canonical": "oklch(84% 0.013 78)",
+        "tonalRamp": ["oklch(30% 0.013 78)", "oklch(45% 0.013 78)", "oklch(58% 0.013 78)", "oklch(68% 0.013 78)", "oklch(76% 0.013 78)", "oklch(84% 0.013 78)", "oklch(91% 0.009 78)", "oklch(96% 0.005 78)"]
+      },
+      "surface-white": {
+        "role": "neutral",
+        "displayName": "Surface White",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": ["oklch(10% 0 0)", "oklch(25% 0 0)", "oklch(40% 0 0)", "oklch(55% 0 0)", "oklch(70% 0 0)", "oklch(82% 0 0)", "oklch(92% 0 0)", "oklch(100% 0 0)"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero title only. One per page. Fraunces italic for the theological word; upright for the structural word." },
+      "headline": { "displayName": "Headline", "purpose": "Section heads and decorative panel ordinals (at opacity 0.35). Structural framing." },
+      "title": { "displayName": "Title", "purpose": "Panel headings, conflict titles, accordion summaries." },
+      "body": { "displayName": "Body", "purpose": "Primary reading text. Max 65–75ch line length." },
+      "label": { "displayName": "Label", "purpose": "Scholarly apparatus: kickers, debater labels, source citations, metadata. IBM Plex Mono only. Never for paragraph text." }
+    },
+    "shadows": [
+      { "name": "soft", "value": "0 1px 2px rgba(26, 24, 20, 0.04), 0 8px 24px -12px rgba(26, 24, 20, 0.18)", "purpose": "Default ambient shadow for cards, tiles, and panels at rest." },
+      { "name": "lift", "value": "0 2px 4px rgba(26, 24, 20, 0.06), 0 20px 48px -20px rgba(26, 24, 20, 0.28)", "purpose": "Hover and :target active state. The highest-elevation surface on screen." }
+    ],
+    "motion": [
+      { "name": "ease-standard", "value": "ease", "purpose": "Default easing for color and opacity transitions." },
+      { "name": "ease-lift", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Card hover lift (translateY). Decelerates quickly — physical, not bouncy." },
+      { "name": "ease-menu", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Mobile nav slide-in and other panel reveals." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "375px", "purpose": "Minimum supported viewport." },
+      { "name": "tablet", "value": "640px", "purpose": "Single-column to two-column transitions (tile grids, debate-face pairs)." },
+      { "name": "desktop", "value": "768px", "purpose": "Four-column tile grid, full navigation links visible." },
+      { "name": "wide", "value": "1023px", "purpose": "Max container width anchored at 72rem." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Arg Tile — Urbina",
+      "kind": "button",
+      "refersTo": "tile-urbina",
+      "description": "Clickable tile that activates a detail panel via :target. Catholic/Navy variant.",
+      "html": "<a href=\"#arg-1\" class=\"ds-tile-urbina\" aria-label=\"Argumento 1: Afirmaciones\"><span class=\"ds-tile-n\">01</span><span class=\"ds-tile-keyword\">Afirmaciones</span></a>",
+      "css": ".ds-tile-urbina { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; padding: 1rem; background: linear-gradient(160deg, #ffffff, #E8EFF8); border: 1px solid #DAD3C6; border-left: 4px solid #1B4F8A; border-radius: 10px; box-shadow: 0 1px 2px rgba(26,24,20,0.04), 0 8px 24px -12px rgba(26,24,20,0.18); text-decoration: none; text-align: center; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease; } .ds-tile-urbina:hover { transform: translateY(-3px); box-shadow: 0 2px 4px rgba(26,24,20,0.06), 0 20px 48px -20px rgba(26,24,20,0.28); border-color: #1B4F8A; } .ds-tile-urbina:focus-visible { outline: 2px solid #C4922A; outline-offset: 2px; transform: translateY(-3px); } .ds-tile-n { font-family: 'Fraunces', Georgia, serif; font-style: italic; font-size: 1.2rem; line-height: 1; color: #1B4F8A; } .ds-tile-keyword { font-family: 'Spectral', Georgia, serif; font-size: 1rem; font-weight: 600; color: #163F6E; line-height: 1.2; }"
+    },
+    {
+      "name": "Arg Tile — Pacheco",
+      "kind": "button",
+      "refersTo": "tile-pacheco",
+      "description": "Clickable tile that activates a detail panel via :target. Evangelical/Crimson variant.",
+      "html": "<a href=\"#obj-1\" class=\"ds-tile-pacheco\" aria-label=\"Objeción 1: Anacronismo\"><span class=\"ds-tile-n ds-tile-n--pacheco\">01</span><span class=\"ds-tile-keyword ds-tile-keyword--pacheco\">Anacronismo</span></a>",
+      "css": ".ds-tile-pacheco { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; padding: 1rem; background: linear-gradient(160deg, #ffffff, #F5EAEA); border: 1px solid #DAD3C6; border-left: 4px solid #7A2E2E; border-radius: 10px; box-shadow: 0 1px 2px rgba(26,24,20,0.04), 0 8px 24px -12px rgba(26,24,20,0.18); text-decoration: none; text-align: center; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease; } .ds-tile-pacheco:hover { transform: translateY(-3px); box-shadow: 0 2px 4px rgba(26,24,20,0.06), 0 20px 48px -20px rgba(26,24,20,0.28); border-color: #7A2E2E; } .ds-tile-pacheco:focus-visible { outline: 2px solid #C4922A; outline-offset: 2px; } .ds-tile-n--pacheco { font-family: 'Fraunces', Georgia, serif; font-style: italic; font-size: 1.2rem; line-height: 1; color: #7A2E2E; } .ds-tile-keyword--pacheco { font-family: 'Spectral', Georgia, serif; font-size: 1rem; font-weight: 600; color: #5F2222; line-height: 1.2; }"
+    },
+    {
+      "name": "Prose Card",
+      "kind": "card",
+      "refersTo": "prose-card",
+      "description": "Informational card for the Contexto section. White surface on Parchment ground.",
+      "html": "<article class=\"ds-prose-card\"><span class=\"ds-prose-card-icon\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"><path d=\"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z\"/><path d=\"M12 8v4l3 3\"/></svg></span><h3 class=\"ds-prose-card-title\">¿Qué es la transustanciación?</h3><p class=\"ds-prose-card-body\">Es la doctrina según la cual la <strong>sustancia</strong> del pan y del vino se convierte en la sustancia del cuerpo y la sangre de Cristo.</p></article>",
+      "css": ".ds-prose-card { background: #ffffff; border: 1px solid #DAD3C6; border-radius: 10px; padding: 1.75rem; box-shadow: 0 1px 2px rgba(26,24,20,0.04), 0 8px 24px -12px rgba(26,24,20,0.18); transition: transform 0.4s cubic-bezier(0.22,1,0.36,1), box-shadow 0.4s ease; } .ds-prose-card:hover { transform: translateY(-4px); box-shadow: 0 2px 4px rgba(26,24,20,0.06), 0 20px 48px -20px rgba(26,24,20,0.28); } .ds-prose-card-icon { display: inline-flex; width: 3rem; height: 3rem; align-items: center; justify-content: center; border-radius: 50%; background: #EFEBE2; color: #C4922A; margin-bottom: 1rem; } .ds-prose-card-title { font-family: 'Fraunces', Georgia, serif; font-size: 1.2rem; font-weight: 600; color: #1A1814; margin: 0 0 0.6rem; line-height: 1.2; } .ds-prose-card-body { font-family: 'Spectral', Georgia, serif; font-size: 1rem; color: #6B6560; line-height: 1.65; margin: 0; } .ds-prose-card-body strong { color: #1A1814; font-weight: 600; }"
+    },
+    {
+      "name": "Debate Face — Urbina",
+      "kind": "card",
+      "refersTo": "tile-urbina",
+      "description": "Displays a debater's position in the Conflictos section. Always appears paired with its Pacheco counterpart.",
+      "html": "<div class=\"ds-cara ds-cara-urbina\"><p class=\"ds-cara-quien\">Dr. Dante Urbina</p><p class=\"ds-cara-texto\">Apela a un consenso moral: basta un número suficiente de citas convergentes para inferir legítimamente que la doctrina ya se profesaba.</p></div>",
+      "css": ".ds-cara { padding: 1rem 1.75rem; border-radius: 4px; border-top: 3px solid; } .ds-cara-urbina { background: #E8EFF8; border-top-color: #1B4F8A; } .ds-cara-quien { font-family: 'IBM Plex Mono', monospace; font-size: 0.83rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; color: #1B4F8A; margin: 0 0 0.4rem; } .ds-cara-texto { font-family: 'Spectral', Georgia, serif; font-size: 1rem; color: #1A1814; line-height: 1.55; margin: 0; }"
+    },
+    {
+      "name": "Debate Face — Pacheco",
+      "kind": "card",
+      "refersTo": "tile-pacheco",
+      "description": "Displays the Evangelical challenge position. Structurally identical to the Urbina face; crimson-coded.",
+      "html": "<div class=\"ds-cara ds-cara-pacheco\"><p class=\"ds-cara-quien ds-cara-quien--pacheco\">Sr. Edgar Pacheco</p><p class=\"ds-cara-texto\">Esos mismos términos pueden denotar un cambio sacramental o de uso, no necesariamente un cambio de sustancia en sentido aristotélico.</p></div>",
+      "css": ".ds-cara-pacheco { background: #F5EAEA; border-top-color: #7A2E2E; } .ds-cara-quien--pacheco { color: #7A2E2E; }"
+    },
+    {
+      "name": "Conclusion Item",
+      "kind": "custom",
+      "refersTo": "conclusion-item",
+      "description": "<details>/<summary> accordion. Gospel Gold throughout. Opens with a lift shadow; chevron rotates 180°.",
+      "html": "<details class=\"ds-conclusion\"><summary class=\"ds-conclusion-summary\"><span class=\"ds-conclusion-n\">1</span><span class=\"ds-conclusion-title\">Los Padres usaron términos de cambio real</span><span class=\"ds-conclusion-chevron\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M3 6l5 5 5-5\"/></svg></span></summary><div class=\"ds-conclusion-body\"><p>Metabolé, conversio, transformatio: estos vocablos implican un cambio en la cosa misma, no solo en su uso o en la percepción del fiel.</p></div></details>",
+      "css": ".ds-conclusion { background: linear-gradient(160deg, #ffffff, rgba(196,146,42,0.05)); border: 1px solid #DAD3C6; border-left: 4px solid #C4922A; border-radius: 10px; box-shadow: 0 1px 2px rgba(26,24,20,0.04), 0 8px 24px -12px rgba(26,24,20,0.18); overflow: hidden; transition: box-shadow 0.3s ease; } .ds-conclusion[open] { box-shadow: 0 2px 4px rgba(26,24,20,0.06), 0 20px 48px -20px rgba(26,24,20,0.28); } .ds-conclusion-summary { display: flex; align-items: center; gap: 1rem; padding: 1.75rem; cursor: pointer; list-style: none; } .ds-conclusion-summary::-webkit-details-marker { display: none; } .ds-conclusion-summary:focus-visible { outline: 2px solid #C4922A; outline-offset: -2px; } .ds-conclusion-n { font-family: 'Fraunces', Georgia, serif; font-style: italic; font-size: 1.44rem; color: #C4922A; flex-shrink: 0; line-height: 1; } .ds-conclusion-title { font-family: 'Fraunces', Georgia, serif; font-size: 1.2rem; color: #163F6E; flex: 1; line-height: 1.25; } .ds-conclusion-chevron { flex-shrink: 0; color: #C4922A; transition: transform 0.3s ease; } .ds-conclusion[open] .ds-conclusion-chevron { transform: rotate(180deg); } .ds-conclusion-body { padding: 0 1.75rem 1.75rem; border-top: 1px solid #DAD3C6; padding-top: 1rem; } .ds-conclusion-body p { font-family: 'Spectral', Georgia, serif; font-size: 1rem; color: #1A1814; line-height: 1.7; margin: 0; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "panel-urbina",
+      "description": "Fixed top bar. Ancient Parchment at 82% opacity with backdrop blur — the single authorized glassmorphism instance.",
+      "html": "<header class=\"ds-nav\"><a href=\"#\" class=\"ds-nav-brand\"><span class=\"ds-nav-mark\">✛</span><span class=\"ds-nav-title\">Transustanciación &amp; los Padres</span></a><nav class=\"ds-nav-links\"><a href=\"#\">Contexto</a><a href=\"#\">Argumentos</a><a href=\"#\">Objeciones</a><a href=\"#\">Videos</a></nav></header>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; height: 4.25rem; background: rgba(247,245,240,0.82); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid #DAD3C6; } .ds-nav-brand { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; color: #1A1814; } .ds-nav-mark { color: #C4922A; font-size: 1.1rem; } .ds-nav-title { font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: 1rem; letter-spacing: -0.01em; } .ds-nav-links { display: flex; gap: 1.5rem; } .ds-nav-links a { text-decoration: none; font-family: 'IBM Plex Mono', monospace; font-size: 0.83rem; letter-spacing: 0.04em; color: #6B6560; padding-bottom: 0.25rem; position: relative; transition: color 0.2s ease; } .ds-nav-links a::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background: #C4922A; transform: scaleX(0); transform-origin: left; transition: transform 0.25s ease; } .ds-nav-links a:hover { color: #1A1814; } .ds-nav-links a:hover::after { transform: scaleX(1); }"
+    },
+    {
+      "name": "Duelo — Signature",
+      "kind": "custom",
+      "refersTo": "tile-urbina",
+      "description": "Hero centerpiece: three-column card presenting both debaters face to face. The visual thesis statement of the site.",
+      "html": "<div class=\"ds-duelo\"><div class=\"ds-duelo-lado ds-duelo-urbina\"><span class=\"ds-duelo-bando\">Postura católica</span><p class=\"ds-duelo-nombre\">Dr. Dante Urbina</p><p class=\"ds-duelo-postura\">Teólogo y filósofo católico, especialista en patrística y apologética eucarística</p></div><div class=\"ds-duelo-vs\"><em>vs</em></div><div class=\"ds-duelo-lado ds-duelo-pacheco\"><span class=\"ds-duelo-bando\">Postura evangélica</span><p class=\"ds-duelo-nombre\">Sr. Edgar Pacheco</p><p class=\"ds-duelo-postura\">Teólogo evangélico reformado, crítico de la transustanciación</p></div></div>",
+      "css": ".ds-duelo { display: grid; grid-template-columns: 1fr auto 1fr; align-items: stretch; border: 1px solid #DAD3C6; border-radius: 10px; overflow: hidden; background: rgba(255,255,255,0.4); box-shadow: 0 1px 2px rgba(26,24,20,0.04), 0 8px 24px -12px rgba(26,24,20,0.18); max-width: 46rem; } .ds-duelo-lado { padding: 1.75rem; display: flex; flex-direction: column; gap: 0.5rem; align-items: center; text-align: center; } .ds-duelo-urbina { background: #E8EFF8; } .ds-duelo-pacheco { background: #F5EAEA; } .ds-duelo-bando { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500; } .ds-duelo-urbina .ds-duelo-bando { color: #1B4F8A; } .ds-duelo-pacheco .ds-duelo-bando { color: #7A2E2E; } .ds-duelo-nombre { font-family: 'Fraunces', Georgia, serif; font-size: 1.2rem; font-weight: 600; color: #1A1814; margin: 0; } .ds-duelo-postura { font-family: 'Spectral', Georgia, serif; font-size: 0.83rem; color: #6B6560; line-height: 1.5; margin: 0; } .ds-duelo-vs { display: flex; align-items: center; justify-content: center; font-family: 'Fraunces', Georgia, serif; font-style: italic; font-size: 1.2rem; color: #C4922A; background: #F7F5F0; padding: 0 1rem; border-left: 1px solid #DAD3C6; border-right: 1px solid #DAD3C6; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Patristic Witness",
+    "overview": "The design is a courtroom, not a chapel. Two debaters — one Catholic, one Evangelical — are cross-examined by two thousand years of documented testimony. Every typographic and color decision carries rhetorical weight: what is large asserts; what is restrained defers; what is gold concludes. The interface is itself an argument.\n\nAncient Parchment (#F7F5F0) sets the ground: a warm, slightly textural page that reads as physical, not digital. On this ground, two competing palettes face each other — Ecclesial Navy for the Catholic position, Argument Crimson for the Evangelical challenge — organized by a single theological color law: blue argues forward, crimson argues back, and neither carries the final word. That belongs to Gospel Gold (#C4922A), which appears only at threshold moments: cited sources, stated conclusions, active selections. Its rarity is the argument.\n\nTypography is the primary carrier. Fraunces handles display and structure; Spectral carries the body text; IBM Plex Mono voices the scholarly apparatus. This three-voice system encodes three editorial registers: the claim, the evidence, and the footnote. The page IS the design.",
+    "keyCharacteristics": [
+      "Two-color dialectic (Navy vs. Crimson) that visually encodes the debate at every interactive level",
+      "Gospel Gold reserved for threshold moments — its rarity is rhetorical",
+      "Ancient Parchment ground treated as a manuscript page, not a software screen",
+      "Fraunces italic carries theological weight; Fraunces upright carries structural frame",
+      "IBM Plex Mono voices the scholarly apparatus: citations, labels, kickers, cross-references",
+      "Elevation responds to attention: surfaces lift only when the reader engages them",
+      "Pure HTML+CSS interactivity: :target for panels, <details> for collapsibles"
+    ],
+    "rules": [
+      { "name": "The Doctrinal Color Rule", "body": "Ecclesial Navy belongs to the Catholic position; Argument Crimson belongs to the Evangelical challenge. Never invert these roles. Crimson must never signal correctness, approval, or primary action. Navy must never signal objection, challenge, or opposition.", "section": "colors" },
+      { "name": "The Gospel Gold Rule", "body": "Gold appears only at threshold moments: a citation referenced, a conclusion reached, an argument selected. Its share of any given screen must stay below 10%. More than that turns accent into noise.", "section": "colors" },
+      { "name": "The Fraunces Italic Rule", "body": "Fraunces italic carries the theological claim. Fraunces upright carries the structural container. If a word needs to feel like it means something, it goes italic. If it needs to feel like it organizes something, it goes upright.", "section": "typography" },
+      { "name": "The Mono Apparatus Rule", "body": "IBM Plex Mono speaks in the scholarly third person. It never leads; it annotates. Use it for: kickers, debater labels, source links, date/meta fields, panel close buttons, navigation links. Never for paragraph text.", "section": "typography" },
+      { "name": "The Reader's Focus Rule", "body": "The :target detail panel is always the highest-elevation surface visible on screen. Nothing else should match or exceed its shadow weight. Two competing Lift-shadow surfaces break this hierarchy.", "section": "elevation" },
+      { "name": "The Flat-By-Default Rule", "body": "Sections at the page level are flat. Only interactive leaves — tiles, cards, thumbnails — carry ambient shadows. Section backgrounds are tonal, not shadowed.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do color-code every component by debater: Ecclesial Navy for the Catholic position, Argument Crimson for the Evangelical challenge — without exception.",
+      "Do reserve Gospel Gold for threshold moments: cited sources, conclusions, active :target tiles, and the hero thesis statement.",
+      "Do present the Pacheco (Evangelical) arguments with identical structural dignity to the Urbina arguments — same tile pattern, same panel pattern, same typographic hierarchy.",
+      "Do use IBM Plex Mono exclusively for the scholarly apparatus: kickers, labels, source citations, panel sub-headings, navigation links. Never for paragraph text.",
+      "Do cap body copy at 65–75ch using max-width: var(--container-narrow) on all prose containers.",
+      "Do respect prefers-reduced-motion: every transform and animation must have a reduced-motion alternative."
+    ],
+    "donts": [
+      "Don't use stock-photo crosses, clip-art Catholic iconography, or gold filigree ornamental borders.",
+      "Don't use gradient text (background-clip: text combined with a gradient). Use a single solid color.",
+      "Don't use glassmorphism decoratively. The navigation's backdrop-filter: blur(12px) is the single authorized instance.",
+      "Don't apply Argument Crimson to affirmative, success, or primary-action UI states.",
+      "Don't use the hero-metric template (large number, small label, gradient accent, stat row).",
+      "Don't extend the border-left: 4px solid stripe pattern to new components.",
+      "Don't build new card grids with identical structure (same icon + heading + text repeated).",
+      "Don't use Argument Crimson Deep as typographic emphasis outside Pacheco-coded panels."
+    ]
+  }
+}
