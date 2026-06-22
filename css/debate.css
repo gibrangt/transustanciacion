@@ -167,17 +167,19 @@
   text-align: center;
   padding-top: calc(var(--nav-h) + var(--space-lg));
   overflow: hidden;
+  /* Ecclesial Navy: the Patristic Witness stands trial, not in a chapel */
   background:
-    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(196, 146, 42, 0.10), transparent 70%),
-    linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-deep) 100%);
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(196, 146, 42, 0.20), transparent 65%),
+    var(--color-urbina);
 }
 .hero__grain {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.5;
+  opacity: 0.65;
+  /* Light manuscript lines on navy */
   background-image:
-    repeating-linear-gradient(0deg, transparent 0 39px, var(--color-ink-soft) 39px 40px);
+    repeating-linear-gradient(0deg, transparent 0 39px, rgba(255, 255, 255, 0.07) 39px 40px);
   -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 45%, #000, transparent 75%);
           mask-image: radial-gradient(ellipse 70% 70% at 50% 45%, #000, transparent 75%);
 }
@@ -194,16 +196,17 @@
   font-size: var(--step-5);
   font-weight: 600;
   line-height: 1.02;
+  color: var(--color-bg);
 }
 .hero__title em {
   font-style: italic;
-  font-weight: 500;
+  font-weight: 900; /* Maximum Fraunces weight — the word commands */
   color: var(--color-accent);
   position: relative;
 }
 .hero__subtitle {
   font-size: var(--step-1);
-  color: var(--color-text-muted);
+  color: rgba(247, 245, 240, 0.72);
   max-width: 38ch;
   font-style: italic;
 }
@@ -217,11 +220,11 @@
   width: 100%;
   max-width: 46rem;
   margin-block: var(--space-md);
-  border: 1px solid var(--color-line);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.4);
-  box-shadow: var(--shadow-soft);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-lift);
 }
 .duelo__lado {
   padding: var(--space-md) var(--space-md);
@@ -272,9 +275,11 @@
   max-width: 44ch;
   font-size: var(--step-0);
   padding: var(--space-sm) var(--space-md);
-  border-left: 2px solid var(--color-accent);
-  background: rgba(196, 146, 42, 0.06);
+  border: 1px solid rgba(196, 146, 42, 0.55);
+  background: rgba(196, 146, 42, 0.10);
   text-align: left;
+  color: var(--color-bg);
+  border-radius: var(--radius);
 }
 .hero__tesis::before {
   content: 'Tesis del sitio';
@@ -283,7 +288,7 @@
   font-size: 0.7rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-accent-deep);
+  color: var(--color-accent);
   margin-bottom: 0.35rem;
 }
 .hero__scroll {
@@ -297,10 +302,19 @@
   font-size: var(--step--1);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-text-muted);
+  color: rgba(247, 245, 240, 0.55);
 }
 .hero__scroll i { animation: bob 2s ease-in-out infinite; font-size: 1.2rem; }
 @keyframes bob { 0%,100% { transform: translateY(0);} 50% { transform: translateY(6px);} }
+
+/* ── Hero: text overrides for Ecclesial Navy background ── */
+.hero__inner > .kicker {
+  color: rgba(247, 245, 240, 0.72);
+}
+.duelo__vs {
+  background: var(--color-urbina-deep);
+  border-inline-color: rgba(255, 255, 255, 0.12);
+}
 
 /* ── Hero entrance: staggered page-load, not scroll-driven ── */
 .hero__inner > .kicker      { animation: hero-fade-up      0.5s var(--ease-out-expo) 0.1s  both; }
@@ -1173,18 +1187,18 @@
 }
 
 .conclusion__summary {
-  background: linear-gradient(160deg, rgba(196, 146, 42, 0.1), rgba(27, 79, 138, 0.06));
+  background: var(--color-urbina-deep);
   padding: var(--space-lg);
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(196, 146, 42, 0.3);
+  border: 2px solid var(--color-accent);
 }
 
 .conclusion__summary p {
   font-size: var(--step-1);
-  color: var(--color-urbina-deep);
+  color: var(--color-bg);
   line-height: 1.7;
   margin: 0;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @media (max-width: 640px) {
