@@ -2,10 +2,10 @@
 .agents/
 .claude/
 .impeccable/
+.superpowers/
 skills-lock.json
 
 # Documentation (local planning, design docs)
-docs/
 DESIGN.md
 PRODUCT.md
 VERIFICACION_MENU_MOVIL.md
