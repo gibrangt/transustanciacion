@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+
+Sitemap: https://gibrangt.github.io/transubstanciacion/sitemap.xml
