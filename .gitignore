@@ -1,9 +1,26 @@
+# Claude Code / Local tools
 .agents/
 .claude/
+.impeccable/
 skills-lock.json
-*.Zone.Identifier
-CLAUDE.md
-*.bak
-*:Zone.Identifier
+
+# Documentation (local planning, design docs)
+docs/
+DESIGN.md
+PRODUCT.md
+VERIFICACION_MENU_MOVIL.md
+
+# Node/npm
 node_modules/
+package.json
 package-lock.json
+
+# Unused
+js/
+
+# OS
+*.Zone.Identifier
+*:Zone.Identifier
+*.bak
+.DS_Store
+Thumbs.db
