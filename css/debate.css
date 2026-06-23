@@ -165,7 +165,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: calc(var(--nav-h) + var(--space-lg));
+  padding-top: calc(var(--nav-h) + env(safe-area-inset-top, 0px) + var(--space-lg));
   overflow: hidden;
   /* Ecclesial Navy: the Patristic Witness stands trial, not in a chapel */
   background:
@@ -330,6 +330,28 @@
   .hero__tesis, .hero__subtitle { text-align: center; }
   .duelo__lado { padding: var(--space-md) var(--space-sm); }
   .duelo__postura { max-width: 100%; }
+
+  /* Hero title: hide forced <br>, reduce size, let text-wrap: balance decide */
+  .hero__title br { display: none; }
+  .hero__title {
+    font-size: clamp(1.75rem, 5vw + 0.5rem, 2.49rem);
+  }
+}
+
+/* ── Touch targets: panel close buttons ── */
+@media (pointer: coarse) {
+  .detalle__cerrar--top {
+    padding: 0.75rem;
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .detalle__cerrar--bottom {
+    padding: 0.75rem 1.5rem;
+    min-height: 44px;
+  }
 }
 
 /* ╔══════════════════════════════════════════════════════════╗

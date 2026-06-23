@@ -69,7 +69,7 @@
 html {
   color-scheme: light;
   scroll-behavior: smooth;
-  scroll-padding-top: var(--nav-h);
+  scroll-padding-top: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
   -webkit-text-size-adjust: 100%;
 }
 
@@ -183,7 +183,10 @@ section {
 .site-nav {
   position: fixed;
   inset: 0 0 auto 0;
-  height: var(--nav-h);
+  height: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
   z-index: 900;
   display: flex;
   align-items: center;
@@ -264,7 +267,7 @@ section {
 /* ── Footer ── */
 .site-footer {
   text-align: center;
-  padding: var(--space-xl) clamp(1.25rem, 5vw, 4rem) var(--space-lg);
+  padding: var(--space-xl) clamp(1.25rem, 5vw, 4rem) max(var(--space-lg), env(safe-area-inset-bottom, 0px));
   border-top: 1px solid var(--color-line);
   background: var(--color-bg-deep);
 }
@@ -343,7 +346,7 @@ section {
   }
   .site-nav__links {
     position: fixed;
-    top: var(--nav-h);
+    top: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
     right: 0;
     left: 0;
     bottom: auto;
@@ -374,7 +377,7 @@ section {
     color: var(--color-text);
     text-decoration: none;
     transition: background-color 0.2s ease;
-    min-height: 40px;
+    min-height: 44px;
   }
   .site-nav__links a:active,
   .site-nav__links a:hover {
@@ -393,6 +396,12 @@ section {
   .site-nav__checkbox:checked ~ .site-nav__overlay {
     display: block;
   }
+}
+
+/* ── Touch targets (coarse pointer = finger, not mouse) ── */
+@media (pointer: coarse) {
+  /* Nav links already at 44px via mobile breakpoint — enforce here too */
+  .site-nav__links a { min-height: 44px; }
 }
 
 /* ── Reduced motion ── */
