@@ -469,11 +469,16 @@
   .conflicto__caras { grid-template-columns: 1fr; }
 }
 
-/* ── Conflictos: dialectic entrance from opposing sides ── */
+/* ── Conflictos: dialectic entrance + hover illumination ── */
 .conflicto__index {
   animation: reveal-index 0.65s var(--ease-out-expo) both;
   animation-timeline: view();
   animation-range: entry 0% entry 45%;
+  transition: text-shadow 0.4s ease;
+}
+/* Ordinal illuminates like a gilded folio on hover */
+.conflicto:hover .conflicto__index {
+  text-shadow: 0 0 28px rgba(196, 146, 42, 0.65);
 }
 .cara--urbina {
   animation: reveal-from-left 0.55s var(--ease-out-expo) both;
@@ -561,8 +566,9 @@
   font-family: var(--font-body);
   font-size: var(--step-0);
   font-weight: 600;
-  color: var(--color-urbina-deep);
+  color: var(--keyword-color, var(--color-urbina-deep));
   line-height: 1.2;
+  transition: color 0.25s ease;
 }
 
 /* Tile activo cuando su panel está en :target */
@@ -576,6 +582,7 @@
 .argumentos:has(#arg-8:target)  a[href="#arg-8"],
 .argumentos:has(#arg-9:target)  a[href="#arg-9"],
 .argumentos:has(#arg-10:target) a[href="#arg-10"] {
+  --keyword-color: var(--color-accent);
   border-left-color: var(--color-accent);
   background: linear-gradient(160deg, var(--color-surface), rgba(196, 146, 42, 0.12));
   box-shadow: var(--shadow-lift);
@@ -662,9 +669,20 @@
 .objeciones:has(#obj-5:target) a[href="#obj-5"],
 .objeciones:has(#obj-6:target) a[href="#obj-6"],
 .objeciones:has(#obj-7:target) a[href="#obj-7"] {
+  --keyword-color: var(--color-accent);
   border-left-color: var(--color-accent);
   background: linear-gradient(160deg, var(--color-surface), rgba(196, 146, 42, 0.12));
   box-shadow: var(--shadow-lift);
+}
+/* Objeciones keyword uses pacheco default; inherits --keyword-color when active */
+.objeciones-grid .arg-tile__keyword {
+  color: var(--keyword-color, var(--color-pacheco-deep));
+}
+
+/* Objeciones section: text selection → Argument Crimson */
+.objeciones ::selection {
+  background: var(--color-pacheco);
+  color: var(--color-bg);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -774,6 +792,14 @@
 .detalle__cerrar:focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
+}
+/* Close icon rotates on hover — press-and-release feeling */
+.detalle__cerrar .ti-x {
+  display: inline-block;
+  transition: transform 0.25s var(--ease-out-quint);
+}
+.detalle__cerrar:hover .ti-x {
+  transform: rotate(90deg);
 }
 
 .detalle__cerrar--top {
@@ -1278,6 +1304,10 @@
   color: var(--color-text);
   margin: 0.5rem 0 0.25rem 0;
   line-height: 1.2;
+  transition: color 0.2s ease;
+}
+.libro-card:hover .libro-card__titulo {
+  color: var(--color-urbina);
 }
 
 .libro-card__autor {
