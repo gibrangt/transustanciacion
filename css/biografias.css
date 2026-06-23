@@ -1,0 +1,257 @@
+/* ============================================================================
+   biografias.css — Estilos para páginas de biografía (Urbina y Pacheco)
+   ========================================================================== */
+
+/* ────────────────────────────────────────────────────────────────────────
+   Hero Biography Section
+   ──────────────────────────────────────────────────────────────────────── */
+
+.hero-bio {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  background-color: var(--color-bg);
+}
+
+.hero-bio__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  max-width: 600px;
+}
+
+.bio-foto {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.hero-bio h1 {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.hero-bio__rol {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* Urbina hero — color accent azul */
+.hero-bio--urbina h1 {
+  color: var(--color-urbina);
+}
+
+/* Pacheco hero — color accent rojo */
+.hero-bio--pacheco h1 {
+  color: var(--color-pacheco);
+}
+
+/* Responsive: desktop */
+@media (min-width: 768px) {
+  .hero-bio {
+    min-height: 60vh;
+    padding: 4rem 2rem;
+  }
+
+  .hero-bio__inner {
+    gap: 2.5rem;
+  }
+
+  .bio-foto {
+    width: 300px;
+    height: 350px;
+  }
+
+  .hero-bio h1 {
+    font-size: 3rem;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────────────────
+   Biography Content Section
+   ──────────────────────────────────────────────────────────────────────── */
+
+.bio-contenido {
+  padding: 4rem 1.5rem;
+  background-color: var(--color-bg);
+}
+
+.bio-contenido__inner {
+  max-width: 65ch;
+  margin: 0 auto;
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+.bio-contenido p {
+  margin: 0 0 1.75rem 0;
+}
+
+.bio-contenido p:last-child {
+  margin-bottom: 0;
+}
+
+.bio-contenido em {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.bio-contenido strong {
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .bio-contenido {
+    padding: 5rem 2rem;
+  }
+
+  .bio-contenido__inner {
+    font-size: 1.1875rem;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────────────────
+   Biography Links Section
+   ──────────────────────────────────────────────────────────────────────── */
+
+.bio-enlaces {
+  padding: 3rem 1.5rem;
+  background-color: var(--color-bg);
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bio-enlaces__heading {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 1.5rem 0;
+}
+
+.bio-enlaces__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.bio-boton {
+  display: inline-block;
+  padding: 0.875rem 1.75rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid;
+}
+
+.bio-boton--urbina {
+  background-color: var(--color-urbina);
+  color: white;
+  border-color: var(--color-urbina);
+}
+
+.bio-boton--urbina:hover {
+  background-color: #0f3456;
+  border-color: #0f3456;
+  text-decoration: none;
+}
+
+.bio-boton--pacheco {
+  background-color: var(--color-pacheco);
+  color: white;
+  border-color: var(--color-pacheco);
+}
+
+.bio-boton--pacheco:hover {
+  background-color: #522020;
+  border-color: #522020;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .bio-enlaces {
+    padding: 4rem 2rem;
+  }
+
+  .bio-enlaces__list {
+    flex-direction: row;
+    gap: 1.5rem;
+    max-width: none;
+  }
+
+  .bio-boton {
+    width: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bio-boton {
+    transition: none;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────────────────
+   Footer Navigation (inter-page)
+   ──────────────────────────────────────────────────────────────────────── */
+
+.site-footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.site-footer__nav a {
+  color: var(--color-urbina);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.site-footer__nav a:hover {
+  text-decoration: underline;
+}
+
+/* Active state: bold if on that page */
+.site-footer__nav a[href="index.html"]:local-link {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+  .site-footer__nav {
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+}
