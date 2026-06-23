@@ -212,10 +212,6 @@ section {
   color: var(--color-accent);
   font-size: 1.1rem;
   display: inline-block;
-  transition: transform 0.25s var(--ease-out-quint);
-}
-.site-nav__brand:hover .site-nav__mark {
-  transform: scale(1.25);
 }
 .site-nav__title {
   font-family: var(--font-display);
@@ -235,20 +231,8 @@ section {
   color: var(--color-text-muted);
   padding-block: 0.25rem;
   position: relative;
-  transition: color 0.2s ease;
-}
-.site-nav__links a::after {
-  content: '';
-  position: absolute;
-  left: 0; bottom: 0;
-  width: 100%; height: 1px;
-  background: var(--color-accent);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.25s ease;
 }
 .site-nav__links a:hover { color: var(--color-text); }
-.site-nav__links a:hover::after { transform: scaleX(1); }
 
 /* CSS-only hamburger menu (checkbox pattern) */
 .site-nav__checkbox {
@@ -276,7 +260,6 @@ section {
   font-size: 1.5rem;
   margin-bottom: var(--space-sm);
   display: block;
-  animation: cross-pulse 4s ease-in-out infinite;
 }
 .site-footer__text {
   max-width: 48ch;
@@ -288,46 +271,10 @@ section {
 
 /* ── Keyframes ─────────────────────────────────────────────────────────── */
 
-/* Footer cross — slow reverent heartbeat */
-@keyframes cross-pulse {
-  0%, 100% { opacity: 0.75; filter: drop-shadow(0 0 0px rgba(196, 146, 42, 0)); }
-  50%       { opacity: 1;    filter: drop-shadow(0 0 10px rgba(196, 146, 42, 0.55)); }
-}
-
-/* Hero entrance (page load, time-based) */
-@keyframes hero-fade-up {
-  from { opacity: 0; translate: 0 18px; }
-  to   { opacity: 1; translate: 0 0; }
-}
-@keyframes hero-title-reveal {
-  from { opacity: 0; clip-path: inset(0 0 100% 0); }
-  to   { opacity: 1; clip-path: inset(0 0 0% 0); }
-}
-
 /* Scroll-driven reveals */
 @keyframes reveal-up {
   from { opacity: 0; translate: 0 24px; }
   to   { opacity: 1; translate: 0 0; }
-}
-@keyframes reveal-from-left {
-  from { opacity: 0; translate: -28px 0; }
-  to   { opacity: 1; translate: 0 0; }
-}
-@keyframes reveal-from-right {
-  from { opacity: 0; translate: 28px 0; }
-  to   { opacity: 1; translate: 0 0; }
-}
-@keyframes tile-enter {
-  from { opacity: 0; translate: 0 16px; scale: 0.97; }
-  to   { opacity: 1; translate: 0 0; scale: 1; }
-}
-@keyframes panel-open {
-  from { opacity: 0; translate: 0 -10px; }
-  to   { opacity: 1; translate: 0 0; }
-}
-@keyframes reveal-index {
-  from { opacity: 0; translate: -20px 0; }
-  to   { opacity: 0.5; translate: 0 0; }
 }
 
 /* ── Reveal base — contenido visible por defecto (nunca se bloquea) ─── */

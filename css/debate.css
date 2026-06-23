@@ -18,21 +18,6 @@
   display: inline-block;
   /* Outer ring effect via box-shadow */
   box-shadow: 0 0 0 2px var(--color-bg), 0 0 0 3px currentColor;
-  transition: transform 0.2s ease, filter 0.2s ease;
-}
-
-.avatar-small:hover {
-  transform: scale(1.08);
-  filter: brightness(1.1);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .avatar-small {
-    transition: none;
-  }
-  .avatar-small:hover {
-    transform: none;
-  }
 }
 
 /* Color-specific variants for small avatars */
@@ -54,11 +39,6 @@
   margin: 0 auto;
   /* Larger, more prominent ring */
   box-shadow: 0 0 0 3px var(--color-bg), 0 0 0 5px currentColor;
-  transition: filter 0.3s ease;
-}
-
-.avatar-portrait:hover {
-  filter: brightness(1.05) saturate(1.1);
 }
 
 /* Container for portrait with color background */
@@ -67,7 +47,6 @@
   padding: 1rem;
   border-radius: 12px;
   background: var(--avatar-bg, transparent);
-  transition: background-color 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,21 +146,7 @@
   text-align: center;
   padding-top: calc(var(--nav-h) + env(safe-area-inset-top, 0px) + var(--space-lg));
   overflow: hidden;
-  /* Ecclesial Navy: the Patristic Witness stands trial, not in a chapel */
-  background:
-    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(196, 146, 42, 0.20), transparent 65%),
-    var(--color-urbina);
-}
-.hero__grain {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.65;
-  /* Light manuscript lines on navy */
-  background-image:
-    repeating-linear-gradient(0deg, transparent 0 39px, rgba(255, 255, 255, 0.07) 39px 40px);
-  -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 45%, #000, transparent 75%);
-          mask-image: radial-gradient(ellipse 70% 70% at 50% 45%, #000, transparent 75%);
+  background: var(--color-urbina);
 }
 .hero__inner {
   position: relative;
@@ -304,8 +269,7 @@
   text-transform: uppercase;
   color: rgba(247, 245, 240, 0.55);
 }
-.hero__scroll i { animation: bob 2s ease-in-out infinite; font-size: 1.2rem; }
-@keyframes bob { 0%,100% { transform: translateY(0);} 50% { transform: translateY(6px);} }
+.hero__scroll i { font-size: 1.2rem; }
 
 /* ── Hero: text overrides for Ecclesial Navy background ── */
 .hero__inner > .kicker {
@@ -316,13 +280,7 @@
   border-inline-color: rgba(255, 255, 255, 0.12);
 }
 
-/* ── Hero entrance: staggered page-load, not scroll-driven ── */
-.hero__inner > .kicker      { animation: hero-fade-up      0.5s var(--ease-out-expo) 0.1s  both; }
-.hero__title                { animation: hero-title-reveal 0.75s var(--ease-out-expo) 0.28s both; }
-.hero__subtitle             { animation: hero-fade-up      0.5s var(--ease-out-expo) 0.65s both; }
-.duelo                      { animation: hero-fade-up      0.6s var(--ease-out-expo) 0.82s both; }
-.hero__tesis                { animation: hero-fade-up      0.5s var(--ease-out-expo) 1.0s  both; }
-.hero__scroll               { animation: hero-fade-up      0.5s var(--ease-out-expo) 1.15s both; }
+/* ── Hero: animations removed for distilled design ── */
 
 @media (max-width: 640px) {
   .duelo { grid-template-columns: 1fr; }
@@ -374,11 +332,9 @@
 }
 .prose-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lift); }
 
-/* ── Contexto: scroll reveal ── */
+/* ── Contexto: prose cards visible by default ── */
 .prose-card.reveal {
-  animation: reveal-up 0.55s var(--ease-out-expo) both;
-  animation-timeline: view();
-  animation-range: entry 0% entry 40%;
+  opacity: 1;
 }
 .prose-card__icon {
   display: inline-flex;
@@ -491,11 +447,8 @@
   .conflicto__caras { grid-template-columns: 1fr; }
 }
 
-/* ── Conflictos: dialectic entrance + hover illumination ── */
+/* ── Conflictos: index numbering ── */
 .conflicto__index {
-  animation: reveal-index 0.65s var(--ease-out-expo) both;
-  animation-timeline: view();
-  animation-range: entry 0% entry 45%;
   transition: text-shadow 0.4s ease;
 }
 /* Ordinal illuminates like a gilded folio on hover */
@@ -503,14 +456,10 @@
   text-shadow: 0 0 28px rgba(196, 146, 42, 0.65);
 }
 .cara--urbina {
-  animation: reveal-from-left 0.55s var(--ease-out-expo) both;
-  animation-timeline: view();
-  animation-range: entry 5% entry 60%;
+  opacity: 1;
 }
 .cara--pacheco {
-  animation: reveal-from-right 0.55s var(--ease-out-expo) 0.08s both;
-  animation-timeline: view();
-  animation-range: entry 5% entry 60%;
+  opacity: 1;
 }
 
 /* ╔══════════════════════════════════════════════════════════╗
@@ -630,12 +579,9 @@
 .objeciones-grid .arg-tile:nth-child(6) { --tile-i: 5; }
 .objeciones-grid .arg-tile:nth-child(7) { --tile-i: 6; }
 
-/* Scroll-driven stagger: translate/scale separate from transform → hover still works */
+/* ── Tiles visible by default ── */
 .arg-tile.reveal {
-  animation: tile-enter 0.45s var(--ease-out-quint) both;
-  animation-timeline: view();
-  animation-range: entry 0% entry 35%;
-  animation-delay: calc(var(--tile-i, 0) * 50ms);
+  opacity: 1;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -735,9 +681,9 @@
   display: block;
 }
 
-/* Panel open: smooth entrance on :target activation */
+/* Panel displayed on :target activation */
 .detalle:target .detalle__inner {
-  animation: panel-open 0.4s var(--ease-out-quint) both;
+  opacity: 1;
 }
 
 .detalle__inner {
@@ -815,13 +761,9 @@
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
 }
-/* Close icon rotates on hover — press-and-release feeling */
+/* Close icon */
 .detalle__cerrar .ti-x {
   display: inline-block;
-  transition: transform 0.25s var(--ease-out-quint);
-}
-.detalle__cerrar:hover .ti-x {
-  transform: rotate(90deg);
 }
 
 .detalle__cerrar--top {
