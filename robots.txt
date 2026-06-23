@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /assets/
 
-Sitemap: https://gibrangt.github.io/transubstanciacion/sitemap.xml
+Sitemap: https://transustanciacion.com/sitemap.xml
