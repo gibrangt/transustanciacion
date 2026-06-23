@@ -227,10 +227,6 @@ section {
   display: flex;
   gap: clamp(1rem, 2.5vw, 2rem);
 }
-/* Labels wrap nav links to auto-close menu on click (CSS-only) */
-.site-nav__links label {
-  display: contents; /* invisible wrapper on desktop — <a> acts as flex child */
-}
 .site-nav__links a {
   text-decoration: none;
   font-family: var(--font-mono);
@@ -371,11 +367,6 @@ section {
   .site-nav__checkbox:checked ~ .site-nav__links {
     transform: translateY(0);
     visibility: visible;
-  }
-  /* On mobile, label becomes a full-width block that toggles the checkbox */
-  .site-nav__links label {
-    display: block;
-    cursor: pointer;
   }
   .site-nav__links a {
     display: flex;
